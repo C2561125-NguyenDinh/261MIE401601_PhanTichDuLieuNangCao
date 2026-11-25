@@ -2,12 +2,12 @@
 
 Mã nguồn tiểu luận cuối kỳ môn **Phân tích dữ liệu nâng cao** (ThS, Trường ĐH Kinh tế – Luật, ĐHQG-HCM).
 
-Đây là một pipeline Python **xuyên suốt và tái lập được** theo chu trình 8 giai đoạn: từ dự báo và ước lượng nhân quả đến tối ưu phân bổ (MILP) và điều phối hành động, có giám sát sau triển khai. Báo cáo Word được **sinh tự động từ kết quả chạy code**, nên mọi con số trong báo cáo đều khớp với kết quả thực nghiệm.
+Đây là một pipeline Python **xuyên suốt và tái lập được** theo chu trình 8 giai đoạn: từ dự báo và ước lượng nhân quả đến tối ưu phân bổ (MILP) và điều phối hành động, có giám sát sau triển khai.
 
 ```
 Dữ liệu X5 (RCT gửi SMS) → Dự báo + hiệu chỉnh + CQR → Nhân quả (ATE/CATE, 6 meta-learner)
 → Hàm giá trị + SPO+ → MILP (OR-Tools SCIP) → Action Router (guardrails, HITL, idempotency)
-→ MLOps (checksum, P95, PSI, TVD, Challenger, Release Gates) → báo cáo .docx
+→ MLOps (checksum, P95, PSI, TVD, Challenger, Release Gates)
 ```
 
 ## 1. Cài đặt
@@ -32,16 +32,12 @@ Lệnh này sẽ:
 1. tự tải 3 tệp dữ liệu X5 (`uplift_train`, `clients`, `purchases`) từ kho công khai của scikit-uplift vào `data/raw/` và kiểm tra mã băm SHA-256;
 2. chạy lần lượt 8 giai đoạn (`src/s0_design.py` … `src/s8_mlops.py`) và các mô-đun bổ trợ s9–s12;
 3. ghi hình vào `results/figures/`, bảng vào `results/tables/`, chỉ số vào `results/metrics.json`;
-4. sinh báo cáo `report/output/Tieu_luan_PTDLNC_X5_Uplift.docx`.
-
-Mở báo cáo trong Word và nhấn **Ctrl+A rồi F9** để cập nhật mục lục, danh mục hình và danh mục bảng.
 
 Các lệnh khác:
 
 ```bash
 python run_all.py --from 4     # chạy lại từ giai đoạn 4
 python run_all.py --only 6     # chỉ chạy giai đoạn 6 (MILP)
-python run_all.py --report     # chỉ sinh lại báo cáo từ kết quả có sẵn
 ```
 
 Dịch vụ, dashboard và MLflow (sau khi đã chạy pipeline):
@@ -80,8 +76,6 @@ Nếu máy không tải được dữ liệu tự động, hãy tải thủ côn
 | `serve/api.py` | Dịch vụ chấm điểm FastAPI (`/health`, `/score`, `/score_batch`) |
 | `dashboard/app.py` | Dashboard giám sát Streamlit (5 trang) |
 | `mlops/` | `mlflow.db` (SQLite) và báo cáo `evidently_drift_train_vs_oot.html` |
-| `report/build_report.py` | Bộ sinh báo cáo .docx từ `report/content/*.md` + kết quả |
-| `report/update_toc_libreoffice.py` | (Tùy chọn) cập nhật mục lục và xuất PDF bằng LibreOffice |
 | `tests/make_synthetic.py` | Dữ liệu tổng hợp để kiểm thử nhanh (KHÔNG dùng cho báo cáo) |
 
 ## 4. Kiểm thử nhanh (không cần dữ liệu thật)

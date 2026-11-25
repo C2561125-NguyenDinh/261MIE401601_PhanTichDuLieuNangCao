@@ -12,3 +12,5 @@ report/output/toc_test*
 mlruns/
 report/output/_cover_bg.jpg
 *.bat
+report/
+dashboard/capture_dashboard.py
