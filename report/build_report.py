@@ -436,9 +436,8 @@ class Report:
         c = self.doc.add_paragraph(style="Chu thich hinh")
         c.add_run(f"Hình {self.fig_no[name]}. ").bold = True
         r = c.add_run(meta["caption"]); r.bold = False; r.italic = True
-        src = self.doc.add_paragraph(); src.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        rr = src.add_run("Nguồn: Kết quả thực nghiệm của tác giả" if not name.startswith("f00") else "Nguồn: Tác giả thiết kế")
-        rr.font.size = Pt(11); rr.italic = True
+        c.paragraph_format.space_after = Pt(12)
+
 
     def table(self, name, rows=None, cols=None, fs=9.5, landscape=False):
         meta = self.registry.get("tables", {}).get(name) or STATIC_CAPTIONS.get(name)
@@ -475,9 +474,7 @@ class Report:
                 pp.paragraph_format.line_spacing = 1.0; pp.paragraph_format.space_after = Pt(0)
                 pp.alignment = WD_ALIGN_PARAGRAPH.RIGHT if isinstance(v, (int, float)) and not isinstance(v, bool) else WD_ALIGN_PARAGRAPH.LEFT
         self._repeat_header(t.rows[0])
-        src = self.doc.add_paragraph(); src.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        rr = src.add_run("Nguồn: Tác giả thiết kế" if (name in ("t00_decision_contract", "t00b_stage_mapping", "t00c_metric_system", "t40_exception_playbook", "t49_retraining_policy", "t09_leakage_checklist") or name.startswith("s_")) else "Nguồn: Kết quả thực nghiệm của tác giả")
-        rr.font.size = Pt(11); rr.italic = True
+        self.doc.add_paragraph().paragraph_format.space_after = Pt(0)  # khoảng trống sau bảng
 
     def _shade(self, cell, color):
         tcPr = cell._tc.get_or_add_tcPr()
