@@ -1,0 +1,5 @@
+﻿Thành phần,Mô hình,AUC,LogLoss,Brier,ECE,Qini_norm
+Dự báo mua hàng,Current (train S1),0.7899,0.4309,0.1404,0.0355,
+Dự báo mua hàng,Challenger (train S1+S2),0.7904,0.4316,0.1408,0.0385,
+Uplift,"Current (Class Transformation, train)",,,,,0.0122
+Uplift,"Challenger (Class Transformation, train+val)",,,,,0.0061

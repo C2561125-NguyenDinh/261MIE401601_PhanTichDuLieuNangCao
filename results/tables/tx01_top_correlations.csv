@@ -1,0 +1,16 @@
+﻿Đặc trưng 1,Đặc trưng 2,Spearman ρ,|ρ|
+items_per_tx,qty_per_tx,0.9278,0.9278
+sum_all,rp_recv_sum,0.9267,0.9267
+aov_std,aov_max,0.9229,0.9229
+n_tx_all,n_tx_28d,0.9098,0.9098
+rp_spent_sum,share_spent_tx,-0.9052,0.9052
+sum_all,sum_28d,0.8999,0.8999
+n_tx_7d,sum_7d,0.8855,0.8855
+aov_all,qty_per_tx,0.8772,0.8772
+aov_all,items_per_tx,0.8607,0.8607
+recency,n_tx_7d,-0.8546,0.8546
+rp_recv_sum,sum_28d,0.8483,0.8483
+aov_all,aov_max,0.8426,0.8426
+n_tx_14d,n_tx_28d,0.8391,0.8391
+n_tx_all,mean_gap,-0.8301,0.8301
+mean_gap,n_tx_28d,-0.8252,0.8252

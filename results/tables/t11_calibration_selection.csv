@@ -1,0 +1,4 @@
+﻿Phương pháp,Brier (CV 2-fold),ECE (CV 2-fold)
+none,0.1436,0.0163
+platt,0.1432,0.0095
+isotonic,0.1434,0.0099

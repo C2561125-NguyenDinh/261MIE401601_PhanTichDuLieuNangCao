@@ -1,0 +1,19 @@
+﻿Tập,Learner,Hệ số góc (quan sát ~ dự báo),Tương quan thập phân vị,Số thập phân vị dự báo âm,Số thập phân vị quan sát âm có ý nghĩa
+locked,Class Transformation,0.1287,0.5508,4,0
+locked,DR-learner,0.4015,0.6706,2,0
+locked,R-learner,0.3831,0.6401,2,0
+locked,S-learner,0.8033,0.6941,1,0
+locked,T-learner,0.1103,0.4085,4,0
+locked,X-learner,0.435,0.648,2,0
+oot,Class Transformation,0.1532,0.61,4,0
+oot,DR-learner,0.5392,0.927,1,0
+oot,R-learner,0.4699,0.823,1,0
+oot,S-learner,0.7335,0.8938,0,0
+oot,T-learner,0.2252,0.7546,3,0
+oot,X-learner,0.6071,0.8868,1,0
+val,Class Transformation,0.2281,0.629,3,0
+val,DR-learner,0.392,0.6366,2,0
+val,R-learner,0.3208,0.605,2,0
+val,S-learner,0.6385,0.7925,1,0
+val,T-learner,0.0983,0.4401,4,0
+val,X-learner,0.3967,0.5793,2,0

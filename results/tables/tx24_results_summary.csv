@@ -1,0 +1,13 @@
+﻿Giai đoạn,Chỉ số chính,Kết quả,Đánh giá
+2. Dữ liệu,Số khách / giao dịch,200.039 / 8.045.229,Locked/OOT tách biệt
+3. Dự báo,AUC (Locked / OOT),"0,8201 / 0,7899",Đạt cổng G1
+3. Hiệu chỉnh,ECE (Locked / OOT),"0,0064 / 0,0355",Không đạt cổng G2 trên OOT
+3. Bất định,Độ phủ CQR (Locked / OOT),"0,897 / 0,890","Sát mục tiêu 0,90"
+4. Nhân quả,ATE toàn bộ [KTC95],"0,0332 [0,0290; 0,0375]",Vững trước kiểm định phản bác
+4. Uplift,Qini Class Transformation (Val / Locked / OOT),"0,0111 / 0,0063 / 0,0122",Thứ hạng không ổn định
+5. SPO+,Regret chuẩn hóa Val (SPO+),"0,9716",Không khác biệt có ý nghĩa
+6. MILP,Lợi nhuận DR Locked [KTC95] (RUB),20.170 [-34.176; 69.622],Chứa 0 – không đạt G4
+6. MILP,Lợi nhuận DR OOT [KTC95] (RUB),41.534 [14.458; 72.277],Dương có ý nghĩa
+7. Router,Kiểm thử đạt / gửi trùng,13/13 / 0,Rào chắn R1 làm giảm giá trị
+8. MLOps,P95 độ trễ E2E (ms),"0,530",Đạt cổng G5
+8. MLOps,Cổng phát hành đạt,7/9,Khuyến nghị triển khai có đối chứng

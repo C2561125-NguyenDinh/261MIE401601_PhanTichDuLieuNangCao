@@ -1,0 +1,3 @@
+﻿Tập,Brier,Độ tin cậy (REL),Độ phân giải (RES),Độ bất định (UNC),REL − RES + UNC
+Locked Test (S2),0.1413,0.0001,0.0466,0.1883,0.1417
+Out-of-Time (S3),0.1404,0.002,0.031,0.1695,0.1406

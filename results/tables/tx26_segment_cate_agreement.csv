@@ -1,0 +1,7 @@
+﻿Learner,Tương quan với uplift quan sát,Sai số tuyệt đối TB
+S-learner,0.8999,0.007
+T-learner,0.8854,0.0075
+X-learner,0.8919,0.0065
+R-learner,0.9008,0.0069
+DR-learner,0.8971,0.0064
+Class Transformation,0.8487,0.0176

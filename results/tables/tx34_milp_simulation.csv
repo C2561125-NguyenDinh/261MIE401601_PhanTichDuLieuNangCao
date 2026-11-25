@@ -1,0 +1,5 @@
+﻿Kịch bản,Số ràng buộc chặt (LP),Giá trị MILP,Giá trị Greedy + sửa chữa,Khoảng cách Greedy TB (%),Khoảng cách Greedy lớn nhất (%),Greedy không sửa khả thi (/5),Greedy + sửa chữa khả thi (/5),Thời gian MILP TB (giây)
+S1. Chỉ ngân sách chặt,1.0,12328.908,12325.2686,0.0296,0.0422,5,5,0.6821
+S2. Ngân sách và năng lực cùng chặt,2.0,13841.4453,11840.3262,14.4617,15.1601,5,5,0.4759
+S3. Thêm trần tập trung theo nhóm,4.0,13084.1369,11306.0642,13.5965,14.5784,5,5,0.4995
+S4. Thêm sàn độ phủ theo nhóm,5.0,13083.0106,11306.0473,13.5889,14.5993,1,5,0.5422

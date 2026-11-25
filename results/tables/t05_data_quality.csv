@@ -1,0 +1,6 @@
+﻿Kiểm tra,Tỷ lệ (%),Xử lý
+"Tuổi ngoài khoảng [14, 100]",0.4446,"Gán NaN, thêm cờ age_invalid"
+Chưa từng đổi điểm (first_redeem_date thiếu),8.8637,Cờ has_redeemed; số ngày = NaN
+Giao dịch có purchase_sum <= 0,0.007,"Giữ lại (hoàn trả/điều chỉnh), tách đặc trưng"
+Khách trong uplift_train không có giao dịch,0.0,"Đặc trưng giao dịch = 0, recency = trần"
+Trùng client_id trong uplift_train,0.0,Không phát sinh

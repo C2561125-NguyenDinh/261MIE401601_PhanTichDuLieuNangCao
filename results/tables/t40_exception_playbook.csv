@@ -1,0 +1,8 @@
+﻿Tín hiệu kích hoạt,Chẩn đoán,Hành động ứng phó,Người chịu trách nhiệm,SLA
+"PSI > 0,25 trên ≥ 3 đặc trưng",Trôi dạt dữ liệu nghiêm trọng,"Chuyển toàn bộ AUTO_SEND sang HUMAN_REVIEW, kích hoạt tái huấn luyện",Data Scientist trực,4 giờ
+Tỷ lệ SUPPRESS tăng > 2 lần so với kỳ trước,Mô hình uplift dịch chuyển,"Tạm dừng chiến dịch, so sánh Current vs Challenger",Trưởng nhóm phân tích,1 ngày
+Bộ giải MILP quá thời gian / không khả thi,Ràng buộc mâu thuẫn hoặc dữ liệu lỗi,Dùng nghiệm Greedy + sửa chữa đã kiểm tra khả thi,Kỹ sư vận hành,30 phút
+Hàng chờ duyệt vượt năng lực,Quá nhiều ca VIP/bất định,"Phần dư → DEFER, ưu tiên theo V̂",Trưởng nhóm CRM,Trong ngày
+P95 độ trễ > ngưỡng,Sự cố hạ tầng,Chuyển sang chấm điểm theo lô (batch),Kỹ sư MLOps,2 giờ
+Khiếu nại khách hàng về tần suất SMS,Rào chắn R2 chưa đủ,"Tăng ngưỡng recency, rà soát nhật ký theo idempotency key",CSKH + CRM,2 ngày
+Checksum dữ liệu đầu vào không khớp,Dữ liệu bị thay đổi/hỏng,"Dừng pipeline, khôi phục snapshot gần nhất",Kỹ sư dữ liệu,Ngay lập tức

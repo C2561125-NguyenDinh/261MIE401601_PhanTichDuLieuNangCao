@@ -1,0 +1,14 @@
+﻿Cấu hình,Số đặc trưng,AUC Locked,Giảm AUC
+Đầy đủ,37,0.8201,0.0
+Bỏ nhóm: RFM & tần suất,29,0.8175,0.0025
+Bỏ nhóm: Giá trị & giỏ hàng,27,0.8191,0.001
+Bỏ nhóm: Xu hướng,35,0.8198,0.0003
+Bỏ nhóm: Điểm thưởng,32,0.8198,0.0002
+Bỏ nhóm: Thời gian & cửa hàng,34,0.8196,0.0005
+Bỏ nhóm: Thẻ & nhân khẩu học,28,0.8184,0.0017
+Chỉ nhóm: RFM & tần suất,8,0.817,0.0031
+Chỉ nhóm: Giá trị & giỏ hàng,10,0.8159,0.0042
+Chỉ nhóm: Xu hướng,2,0.7478,0.0722
+Chỉ nhóm: Điểm thưởng,5,0.7616,0.0585
+Chỉ nhóm: Thời gian & cửa hàng,3,0.7818,0.0383
+Chỉ nhóm: Thẻ & nhân khẩu học,9,0.6179,0.2022

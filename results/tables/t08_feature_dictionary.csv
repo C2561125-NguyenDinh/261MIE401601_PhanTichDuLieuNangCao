@@ -1,0 +1,38 @@
+﻿Đặc trưng,Mô tả,Kiểu,Thiếu (%) - tập chiến dịch,Trung bình,Trung vị
+recency,Số ngày từ giao dịch gần nhất đến mốc cắt,float32,0.0,6.3148,4.4234
+first_tx_age,Số ngày từ giao dịch đầu tiên trong cửa sổ nhìn lại đến mốc cắt,float32,0.0,42.0378,47.4386
+n_tx_all,Tổng số giao dịch trong cửa sổ nhìn lại,float32,0.0,10.1901,8.0
+sum_all,Tổng chi tiêu trong cửa sổ nhìn lại,float32,0.0,4348.6963,3004.43
+aov_all,Giá trị giỏ hàng trung bình,float32,0.0,491.058,383.1538
+aov_std,Độ lệch chuẩn giá trị giỏ hàng,float32,5.7099,295.9296,227.0606
+aov_max,Giá trị giỏ hàng lớn nhất,float32,0.0,983.9982,785.79
+items_per_tx,Số dòng sản phẩm trung bình / giao dịch,float32,0.0,6.4309,5.5
+qty_per_tx,Số lượng sản phẩm trung bình / giao dịch,float32,0.0,8.0947,6.5882
+n_stores,Số cửa hàng khác nhau đã mua,float32,0.0,2.2117,2.0
+rp_recv_sum,Tổng điểm thường nhận,float32,0.0,39.0592,23.1
+ep_recv_sum,Tổng điểm express nhận,float32,0.0,0.0534,0.0
+rp_spent_sum,Tổng điểm thường đã tiêu (âm),float32,0.0,-32.8227,0.0
+ep_spent_sum,Tổng điểm express đã tiêu (âm),float32,0.0,-3.477,0.0
+share_spent_tx,Tỷ lệ giao dịch có tiêu điểm,float32,0.0,0.0677,0.0
+share_weekend,Tỷ lệ giao dịch cuối tuần,float32,0.0,0.283,0.25
+mean_hour,Giờ mua trung bình,float32,0.0,11.8143,11.8889
+neg_tx_share,Tỷ lệ giao dịch giá trị <= 0,float32,0.0,0.0,0.0
+mean_gap,Khoảng cách trung bình giữa hai giao dịch (ngày),float32,5.7099,6.887,5.033
+n_tx_7d,Số giao dịch trong 7 ngày trước mốc cắt,float32,0.0,1.3755,1.0
+sum_7d,Chi tiêu trong 7 ngày trước mốc cắt,float32,0.0,582.8694,258.0
+n_tx_14d,Số giao dịch trong 14 ngày trước mốc cắt,float32,0.0,2.8976,2.0
+sum_14d,Chi tiêu trong 14 ngày trước mốc cắt,float32,0.0,1274.6084,810.08
+n_tx_28d,Số giao dịch trong 28 ngày trước mốc cắt,float32,0.0,5.7459,4.0
+sum_28d,Chi tiêu trong 28 ngày trước mốc cắt,float32,0.0,2482.0464,1681.04
+trend_14_28,Tỷ số số giao dịch 14 ngày gần nhất / 14 ngày trước đó,float32,28.8479,1.2953,1.0
+sum_trend_14_28,Tỷ số chi tiêu 14 ngày gần nhất / 14 ngày trước đó,float32,0.0,1.4439,0.6385
+has_tx,Có giao dịch trong cửa sổ nhìn lại,float32,0.0,1.0,1.0
+tenure_days,Số ngày từ ngày mở thẻ,float32,0.0,433.2302,488.0
+has_redeemed,Đã từng đổi điểm trước mốc cắt,float32,0.0,0.7993,1.0
+days_since_redeem,Số ngày từ lần đổi điểm đầu,float32,20.0691,313.3086,330.0
+issue_to_redeem_days,Số ngày từ mở thẻ đến lần đổi điểm đầu,float32,20.0691,160.8948,121.0
+age_invalid,Cờ tuổi không hợp lệ,float32,0.0,0.0044,0.0
+age,Tuổi (đã làm sạch),float32,0.4414,46.4213,45.0
+gender_F,Giới tính nữ,float32,0.0,0.3684,0.0
+gender_M,Giới tính nam,float32,0.0,0.1675,0.0
+gender_U,Giới tính không rõ,float32,0.0,0.4641,0.0

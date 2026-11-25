@@ -1,0 +1,10 @@
+﻿Cổng phát hành,Tiêu chí,Giá trị đo được,Kết quả
+G1 Phân biệt dự báo (AUC OOT),≥ 0.7,0.7898693258813578,PASS
+G2 Hiệu chỉnh (ECE OOT),≤ 0.03,0.035505411891281,FAIL
+G3 Uplift ngoài mẫu (Qini OOT),> 0.0,0.012222284592296741,PASS
+"G4 Giá trị chính sách MILP (KTC95 dưới, Locked)",> 0.0 RUB,-34176.04952153232,FAIL
+G5 Độ trễ E2E P95,≤ 50.0 ms,0.5297626498304453,PASS
+G6 Số đặc trưng PSI báo động (OOT cohort),≤ 3,3,PASS
+G7 Kiểm thử Action Router,100% PASS,13/13,PASS
+G8 Idempotency (không gửi trùng),0 bản gửi trùng,0,PASS
+G9 Nghiệm MILP khả thi & tối ưu,OPTIMAL/FEASIBLE,OPTIMAL,PASS

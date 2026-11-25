@@ -1,0 +1,5 @@
+﻿Kiểm định,Kỳ vọng,Kết quả,Độ lệch chuẩn,p-value (2 phía)
+Placebo treatment (hoán vị T),≈ 0,0.0002,0.0025,0.0
+Thêm biến gây nhiễu ngẫu nhiên (AIPW),≈ 0.0288,0.0287,0.0023,
+Ổn định mẫu con 50% (Neyman),≈ 0.0308,0.0308,0.0026,
+Bootstrap ATE (Neyman),≈ 0.0308,0.0309,0.0026,0.0

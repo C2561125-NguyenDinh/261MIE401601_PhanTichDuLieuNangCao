@@ -1,0 +1,17 @@
+﻿Ràng buộc,Giá đối ngẫu (shadow price)
+capacity,-0.0
+budget,11.2525
+max_share[25-34],0.0
+min_cov[25-34],-0.0
+max_share[35-44],0.0
+min_cov[35-44],-0.0
+max_share[45-54],0.0
+min_cov[45-54],-0.0
+max_share[55-64],0.0
+min_cov[55-64],-0.0
+max_share[65+],0.0
+min_cov[65+],-0.0
+max_share[<25],0.0
+min_cov[<25],-0.0
+max_share[Không rõ],0.0
+min_cov[Không rõ],-0.0

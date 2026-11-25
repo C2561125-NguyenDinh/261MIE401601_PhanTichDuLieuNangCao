@@ -1,0 +1,4 @@
+﻿Tập,Qini chuẩn hóa (CausalForestDML),AUUC,Uplift@10%,Tương quan Spearman với learner đã chọn,Tỷ lệ khách có KTC95 của CATE không chứa 0,CATE TB
+val,0.0089,0.0037,0.0872,0.3427,0.6475,0.0282
+locked,0.0109,0.0044,0.1073,0.3401,0.6407,0.0281
+oot,0.0199,0.0076,0.1219,0.4866,0.7411,0.0332

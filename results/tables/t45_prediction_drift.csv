@@ -1,0 +1,5 @@
+﻿Hiệu chỉnh,Tập,AUC,Brier,ECE,mean_p,base_rate
+none,Locked Test (S2),0.8201,0.1415,0.0118,0.7374,0.7484
+none,Out-of-Time (S3),0.7899,0.1426,0.0509,0.7328,0.7836
+platt,Locked Test (S2),0.8201,0.1413,0.0064,0.7522,0.7484
+platt,Out-of-Time (S3),0.7899,0.1404,0.0355,0.7481,0.7836

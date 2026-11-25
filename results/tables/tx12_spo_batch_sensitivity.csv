@@ -1,0 +1,61 @@
+﻿Kích thước lô n,Tỷ lệ chọn k/n,Phương pháp,Regret chuẩn hóa,Giá trị DR TB / khách (RUB)
+50,0.1,PTO - Ridge (MSE),0.9856,0.6211
+50,0.1,PTO - Plug-in CATE (LightGBM),0.9799,0.8663
+50,0.1,Heuristic - Xác suất mua (p_buy),0.9976,0.1019
+50,0.1,Heuristic - Ngẫu nhiên,0.9824,0.7603
+50,0.1,SPO+ (tuyến tính),0.9847,0.6628
+50,0.3,PTO - Ridge (MSE),0.9863,1.0373
+50,0.3,PTO - Plug-in CATE (LightGBM),0.9854,1.1115
+50,0.3,Heuristic - Xác suất mua (p_buy),0.987,0.9901
+50,0.3,Heuristic - Ngẫu nhiên,0.972,2.129
+50,0.3,SPO+ (tuyến tính),0.9839,1.2259
+50,0.5,PTO - Ridge (MSE),0.9858,1.2566
+50,0.5,PTO - Plug-in CATE (LightGBM),0.9804,1.7306
+50,0.5,Heuristic - Xác suất mua (p_buy),0.9792,1.8353
+50,0.5,Heuristic - Ngẫu nhiên,0.975,2.2082
+50,0.5,SPO+ (tuyến tính),0.9829,1.5062
+100,0.1,PTO - Ridge (MSE),0.9907,0.4096
+100,0.1,PTO - Plug-in CATE (LightGBM),0.9826,0.7643
+100,0.1,Heuristic - Xác suất mua (p_buy),0.9999,0.0027
+100,0.1,Heuristic - Ngẫu nhiên,0.9779,0.9677
+100,0.1,SPO+ (tuyến tính),0.9864,0.5962
+100,0.3,PTO - Ridge (MSE),0.9892,0.8244
+100,0.3,PTO - Plug-in CATE (LightGBM),0.9886,0.8725
+100,0.3,Heuristic - Xác suất mua (p_buy),0.9875,0.9535
+100,0.3,Heuristic - Ngẫu nhiên,0.9746,1.938
+100,0.3,SPO+ (tuyến tính),0.9884,0.8855
+100,0.5,PTO - Ridge (MSE),0.9869,1.1644
+100,0.5,PTO - Plug-in CATE (LightGBM),0.9805,1.7269
+100,0.5,Heuristic - Xác suất mua (p_buy),0.9803,1.7446
+100,0.5,Heuristic - Ngẫu nhiên,0.9743,2.2769
+100,0.5,SPO+ (tuyến tính),0.9813,1.6589
+200,0.1,PTO - Ridge (MSE),0.9906,0.4173
+200,0.1,PTO - Plug-in CATE (LightGBM),0.9808,0.849
+200,0.1,Heuristic - Xác suất mua (p_buy),0.999,0.042
+200,0.1,Heuristic - Ngẫu nhiên,0.9742,1.1372
+200,0.1,SPO+ (tuyến tính),0.9843,0.6918
+200,0.3,PTO - Ridge (MSE),0.9896,0.7949
+200,0.3,PTO - Plug-in CATE (LightGBM),0.9891,0.837
+200,0.3,Heuristic - Xác suất mua (p_buy),0.9881,0.911
+200,0.3,Heuristic - Ngẫu nhiên,0.9737,2.0177
+200,0.3,SPO+ (tuyến tính),0.9901,0.7555
+200,0.5,PTO - Ridge (MSE),0.9867,1.1828
+200,0.5,PTO - Plug-in CATE (LightGBM),0.9815,1.6474
+200,0.5,Heuristic - Xác suất mua (p_buy),0.9832,1.4913
+200,0.5,Heuristic - Ngẫu nhiên,0.9741,2.3054
+200,0.5,SPO+ (tuyến tính),0.9812,1.6707
+500,0.1,PTO - Ridge (MSE),0.9923,0.3405
+500,0.1,PTO - Plug-in CATE (LightGBM),0.9815,0.822
+500,0.1,Heuristic - Xác suất mua (p_buy),0.9992,0.0367
+500,0.1,Heuristic - Ngẫu nhiên,0.9748,1.1188
+500,0.1,SPO+ (tuyến tính),0.9883,0.5191
+500,0.3,PTO - Ridge (MSE),0.9884,0.8948
+500,0.3,PTO - Plug-in CATE (LightGBM),0.9903,0.7425
+500,0.3,Heuristic - Xác suất mua (p_buy),0.9893,0.8233
+500,0.3,Heuristic - Ngẫu nhiên,0.9741,1.9914
+500,0.3,SPO+ (tuyến tính),0.9888,0.8608
+500,0.5,PTO - Ridge (MSE),0.9867,1.1873
+500,0.5,PTO - Plug-in CATE (LightGBM),0.9815,1.6484
+500,0.5,Heuristic - Xác suất mua (p_buy),0.9812,1.6734
+500,0.5,Heuristic - Ngẫu nhiên,0.973,2.406
+500,0.5,SPO+ (tuyến tính),0.9806,1.7307

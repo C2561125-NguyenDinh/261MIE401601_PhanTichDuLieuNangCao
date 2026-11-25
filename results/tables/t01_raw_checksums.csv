@@ -1,0 +1,4 @@
+﻿file,role,size_mb,sha256
+uplift_train.csv.gz,train,1.1276,0a218e864a1ec1dfe26e980a082b81d5f46d199c4a6ae32abbaa95265af1c2c7
+clients.csv.gz,clients,7.2839,bfca1719b862735ae9816ed9bbba6924931c6a4dff761c481efe9addff458429
+purchases.csv.gz,purchases,638.942,3d57519fa92b553fd1e947c120add475cc42e0c64c323a52cef5aebe8645c8e2

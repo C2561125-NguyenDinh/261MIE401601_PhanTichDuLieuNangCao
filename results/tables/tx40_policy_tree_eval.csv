@@ -1,0 +1,7 @@
+﻿Tập,Chính sách,Số khách gửi,Chi phí (RUB),Lợi nhuận tăng thêm DR (RUB),KTC95 dưới,KTC95 trên,ROI tăng thêm,Chính sách − MILP: KTC95 dưới,Chính sách − MILP: KTC95 trên,Trong ngân sách,Khả thi (mọi ràng buộc)
+Locked Test,MILP (SCIP),8149,18590.3983,20170.3799,-35478.4446,74373.4849,1.085,0.0,0.0,True,True
+Locked Test,Cây chính sách (không giới hạn ngân sách),34009,77465.3184,141650.2991,34197.3667,219035.715,1.8286,41376.4562,189589.5833,False,False
+Locked Test,Cây chính sách + giới hạn ngân sách,7855,18590.2034,30731.8056,-26396.928,89429.7905,1.6531,-3703.1931,28504.2778,True,True
+OOT,MILP (SCIP),6705,15403.4314,41533.6332,15533.9257,71364.2777,2.6964,0.0,0.0,True,True
+OOT,Cây chính sách (không giới hạn ngân sách),30006,64186.7546,173597.398,100288.3304,247241.6946,2.7046,63510.4796,200460.0653,False,False
+OOT,Cây chính sách + giới hạn ngân sách,6699,15403.3266,41612.8036,15931.8363,72006.9947,2.7015,-1253.6837,1416.4887,True,True

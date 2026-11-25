@@ -1,0 +1,13 @@
+data/
+data_smoke/
+results_smoke/
+models_smoke/
+models/*.joblib
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.part
+logs_*.txt
+report/output/toc_test*
+mlruns/
+report/output/_cover_bg.jpg

@@ -1,0 +1,7 @@
+﻿Độ sâu,Số khách tối thiểu / lá,Tỷ lệ được gửi (Validation),Lợi nhuận DR trên Validation (RUB),Được chọn
+1,500,1.0,116046.241,True
+1,2000,1.0,116046.241,False
+2,500,0.8806,96941.3716,False
+2,2000,0.8806,96941.3716,False
+3,500,0.8697,103143.5459,False
+3,2000,0.9202,113706.5999,False

@@ -1,0 +1,762 @@
+{
+  "tables": {
+    "t01_raw_checksums": {
+      "file": "t01_raw_checksums.csv",
+      "caption": "Bảng băm SHA-256 của các tệp dữ liệu gốc"
+    },
+    "t02_treatment_target": {
+      "file": "t02_treatment_target.csv",
+      "caption": "Phân bố khách hàng theo nhóm can thiệp và biến kết quả"
+    },
+    "t03_clients_profile": {
+      "file": "t03_clients_profile.csv",
+      "caption": "Hồ sơ dữ liệu bảng khách hàng (clients)"
+    },
+    "t04_transactions_profile": {
+      "file": "t04_transactions_profile.csv",
+      "caption": "Thống kê mô tả dữ liệu giao dịch"
+    },
+    "t05_data_quality": {
+      "file": "t05_data_quality.csv",
+      "caption": "Bảng kiểm chất lượng dữ liệu"
+    },
+    "t00_decision_contract": {
+      "file": "t00_decision_contract.csv",
+      "caption": "Đặc tả bài toán quyết định - hành động (Decision Contract)"
+    },
+    "t00b_stage_mapping": {
+      "file": "t00b_stage_mapping.csv",
+      "caption": "Ánh xạ chu trình tám giai đoạn sang mô-đun mã nguồn và đầu ra"
+    },
+    "t00c_metric_system": {
+      "file": "t00c_metric_system.csv",
+      "caption": "Hệ thống chỉ số đo lường đa tầng"
+    },
+    "t06_split_summary": {
+      "file": "t06_split_summary.csv",
+      "caption": "Thống kê các tập Train / Validation / Locked Test / Out-of-Time (bài toán uplift)"
+    },
+    "t07_snapshot_summary": {
+      "file": "t07_snapshot_summary.csv",
+      "caption": "Thiết kế ba ảnh chụp thời gian cho bài toán dự báo"
+    },
+    "t08_feature_dictionary": {
+      "file": "t08_feature_dictionary.csv",
+      "caption": "Từ điển đặc trưng (Data Contract đầu vào mô hình)"
+    },
+    "t09_leakage_checklist": {
+      "file": "t09_leakage_checklist.csv",
+      "caption": "Bảng kiểm rò rỉ thông tin (leakage checklist)"
+    },
+    "t10_forecast_model_comparison": {
+      "file": "t10_forecast_model_comparison.csv",
+      "caption": "So sánh mô hình dự báo xác suất mua hàng (chưa hiệu chỉnh)"
+    },
+    "t11_calibration_selection": {
+      "file": "t11_calibration_selection.csv",
+      "caption": "Lựa chọn phương pháp hiệu chỉnh bằng kiểm định chéo 2-fold trên tập Validation"
+    },
+    "t12_calibration_results": {
+      "file": "t12_calibration_results.csv",
+      "caption": "Hiệu năng LightGBM trước và sau hiệu chỉnh trên Locked Test và Out-of-Time"
+    },
+    "t13_forecast_importance": {
+      "file": "t13_forecast_importance.csv",
+      "caption": "Tỷ trọng gain của các đặc trưng trong mô hình dự báo"
+    },
+    "t14_decision_curve": {
+      "file": "t14_decision_curve.csv",
+      "caption": "Phân tích đường cong quyết định (net benefit) trên Locked Test"
+    },
+    "t15_cqr_results": {
+      "file": "t15_cqr_results.csv",
+      "caption": "Định lượng bất định chi tiêu bằng Conformalized Quantile Regression"
+    },
+    "t16_balance_smd": {
+      "file": "t16_balance_smd.csv",
+      "caption": "Kiểm tra cân bằng hiệp biến giữa nhóm can thiệp và đối chứng (SMD)"
+    },
+    "t17_ate_estimates": {
+      "file": "t17_ate_estimates.csv",
+      "caption": "Ước lượng tác động trung bình ATE / ATT / ATC bằng nhiều phương pháp"
+    },
+    "t18_refutation": {
+      "file": "t18_refutation.csv",
+      "caption": "Các kiểm định phản bác (refutation tests) cho ước lượng nhân quả"
+    },
+    "t19_uplift_learners": {
+      "file": "t19_uplift_learners.csv",
+      "caption": "So sánh các meta-learner uplift trên Validation, Locked Test và Out-of-Time"
+    },
+    "t20_uplift_deciles": {
+      "file": "t20_uplift_deciles.csv",
+      "caption": "Uplift dự báo và quan sát theo thập phân vị (Class Transformation)"
+    },
+    "t21_learner_corr": {
+      "file": "t21_learner_corr.csv",
+      "caption": "Tương quan hạng Spearman giữa CATE của các learner"
+    },
+    "t22_segment_heterogeneity": {
+      "file": "t22_segment_heterogeneity.csv",
+      "caption": "Tác động không đồng nhất theo phân khúc (Locked + OOT)"
+    },
+    "t23_cate_importance": {
+      "file": "t23_cate_importance.csv",
+      "caption": "Tỷ trọng gain của các đặc trưng trong mô hình CATE (DR-learner, giai đoạn cuối)"
+    },
+    "t24_spo_training": {
+      "file": "t24_spo_training.csv",
+      "caption": "Lịch sử huấn luyện SPO+ (Adam, early stopping theo regret trên Validation)"
+    },
+    "t25_finite_difference": {
+      "file": "t25_finite_difference.csv",
+      "caption": "Kiểm tra đạo hàm dưới SPO+ bằng sai phân hữu hạn trung tâm"
+    },
+    "t26_pto_vs_spo": {
+      "file": "t26_pto_vs_spo.csv",
+      "caption": "So sánh Predict-Then-Optimize, SPO+ và heuristic theo regret và giá trị quyết định"
+    },
+    "t27_error_vs_regret": {
+      "file": "t27_error_vs_regret.csv",
+      "caption": "Thực nghiệm: cùng mức sai số dự báo nhưng tổn thất quyết định khác nhau"
+    },
+    "t28_policy_comparison_locked": {
+      "file": "t28_policy_comparison_locked.csv",
+      "caption": "So sánh chính sách phân bổ trên tập Locked Test (policy validation)"
+    },
+    "t29_shadow_prices": {
+      "file": "t29_shadow_prices.csv",
+      "caption": "Giá đối ngẫu của các ràng buộc từ nới lỏng LP (Locked Test)"
+    },
+    "t30_segment_allocation": {
+      "file": "t30_segment_allocation.csv",
+      "caption": "Phân bổ lượt gửi theo nhóm tuổi và các ràng buộc công bằng"
+    },
+    "t28_policy_comparison_oot": {
+      "file": "t28_policy_comparison_oot.csv",
+      "caption": "So sánh chính sách phân bổ trên tập Out-of-Time"
+    },
+    "t31_budget_sensitivity": {
+      "file": "t31_budget_sensitivity.csv",
+      "caption": "Độ nhạy theo năng lực gửi và ngân sách (Locked Test)"
+    },
+    "t32_economic_sensitivity": {
+      "file": "t32_economic_sensitivity.csv",
+      "caption": "Độ nhạy của quyết định tối ưu theo giả định biên lợi nhuận và chi phí ưu đãi"
+    },
+    "t33_solution_stability": {
+      "file": "t33_solution_stability.csv",
+      "caption": "Độ ổn định nghiệm MILP khi nhiễu hóa uplift theo độ bất đồng giữa các learner"
+    },
+    "t34_router_unit_tests": {
+      "file": "t34_router_unit_tests.csv",
+      "caption": "Kiểm thử tình huống biên của Action Router"
+    },
+    "t36_router_value_scenarios": {
+      "file": "t36_router_value_scenarios.csv",
+      "caption": "Tác động của rào chắn nghiệp vụ và Human-in-the-loop lên giá trị (Locked Test)"
+    },
+    "t37_rule_hits": {
+      "file": "t37_rule_hits.csv",
+      "caption": "Số lần kích hoạt từng quy tắc nghiệp vụ (Locked Test)"
+    },
+    "t38_milp_vs_action": {
+      "file": "t38_milp_vs_action.csv",
+      "caption": "Ma trận chuyển từ quyết định MILP sang hành động cuối cùng"
+    },
+    "t39_decision_log_sample": {
+      "file": "t39_decision_log_sample.csv",
+      "caption": "Trích nhật ký quyết định (30 bản ghi đầu, Locked Test)"
+    },
+    "t35_action_distribution": {
+      "file": "t35_action_distribution.csv",
+      "caption": "Phân bổ khách hàng theo luồng hành động sau định tuyến"
+    },
+    "t40_exception_playbook": {
+      "file": "t40_exception_playbook.csv",
+      "caption": "Playbook ngoại lệ và ứng phó sự cố (thiết kế vận hành)"
+    },
+    "t41_artifact_checksums": {
+      "file": "t41_artifact_checksums.csv",
+      "caption": "Bảng mã băm SHA-256 của mô hình và dữ liệu đã xử lý (đóng băng phiên bản)"
+    },
+    "t42_version_matrix": {
+      "file": "t42_version_matrix.csv",
+      "caption": "Ma trận tương thích phiên bản môi trường thực thi"
+    },
+    "t43_latency": {
+      "file": "t43_latency.csv",
+      "caption": "Độ trễ chấm điểm trực tuyến theo bước (2000 yêu cầu) và ngân sách độ trễ"
+    },
+    "t44_psi_drift": {
+      "file": "t44_psi_drift.csv",
+      "caption": "Chỉ số ổn định quần thể (PSI) của các đặc trưng theo ba phép so sánh"
+    },
+    "t45_prediction_drift": {
+      "file": "t45_prediction_drift.csv",
+      "caption": "Trôi dạt hiệu năng dự báo giữa Locked Test (S2) và Out-of-Time (S3)"
+    },
+    "t46_label_delay": {
+      "file": "t46_label_delay.csv",
+      "caption": "Ảnh hưởng của độ trễ nhãn lên các chỉ số giám sát (snapshot S3)"
+    },
+    "t47_champion_challenger": {
+      "file": "t47_champion_challenger.csv",
+      "caption": "Đối sánh Current và Challenger sau tái huấn luyện trên dữ liệu Out-of-Time"
+    },
+    "t48_release_gates": {
+      "file": "t48_release_gates.csv",
+      "caption": "Kiểm định các cổng phát hành (Release Gates)"
+    },
+    "t49_retraining_policy": {
+      "file": "t49_retraining_policy.csv",
+      "caption": "Chính sách tái huấn luyện và thăng hạng mô hình"
+    },
+    "tx01_top_correlations": {
+      "file": "tx01_top_correlations.csv",
+      "caption": "Mười lăm cặp đặc trưng tương quan mạnh nhất"
+    },
+    "tx02_segment_profile": {
+      "file": "tx02_segment_profile.csv",
+      "caption": "Hồ sơ phân khúc khách hàng: quy mô, tỷ lệ mua và chi tiêu"
+    },
+    "tx03_uplift_age_freq": {
+      "file": "tx03_uplift_age_freq.csv",
+      "caption": "Uplift quan sát theo hai chiều nhóm tuổi × tần suất mua"
+    },
+    "tx04_brier_decomposition": {
+      "file": "tx04_brier_decomposition.csv",
+      "caption": "Phân rã Murphy của Brier score (mô hình đã hiệu chỉnh)"
+    },
+    "tx05_calibration_by_age": {
+      "file": "tx05_calibration_by_age.csv",
+      "caption": "Hiệu năng và hiệu chỉnh của mô hình dự báo theo nhóm tuổi (Locked Test)"
+    },
+    "tx06_feature_group_ablation": {
+      "file": "tx06_feature_group_ablation.csv",
+      "caption": "Phân tích loại bỏ nhóm đặc trưng (ablation) của mô hình dự báo"
+    },
+    "tx07_learning_curve": {
+      "file": "tx07_learning_curve.csv",
+      "caption": "Đường cong học: AUC theo quy mô dữ liệu huấn luyện"
+    },
+    "tx08_learner_deciles_locked": {
+      "file": "tx08_learner_deciles_locked.csv",
+      "caption": "Uplift theo thập phân vị của sáu learner trên Locked Test"
+    },
+    "tx09_uplift_calibration": {
+      "file": "tx09_uplift_calibration.csv",
+      "caption": "Độ hiệu chỉnh của uplift dự báo theo learner (hồi quy trên 10 thập phân vị)"
+    },
+    "tx10_policy_curves": {
+      "file": "tx10_policy_curves.csv",
+      "caption": "Lợi nhuận DR khi nhắm top q% theo từng learner (Locked Test, OOT)"
+    },
+    "tx11_ensemble_qini": {
+      "file": "tx11_ensemble_qini.csv",
+      "caption": "Hệ số Qini của tổ hợp X+R+DR-learner so với từng learner"
+    },
+    "tx12_spo_batch_sensitivity": {
+      "file": "tx12_spo_batch_sensitivity.csv",
+      "caption": "Regret chuẩn hóa theo kích thước lô và tỷ lệ chọn (Locked Test)"
+    },
+    "tx13_milp_score_sources": {
+      "file": "tx13_milp_score_sources.csv",
+      "caption": "MILP với các nguồn điểm quyết định khác nhau (Validation, Locked Test, OOT)"
+    },
+    "tx14_fairness_stress": {
+      "file": "tx14_fairness_stress.csv",
+      "caption": "Kiểm tra áp lực của ràng buộc công bằng: cái giá của công bằng theo sàn và trần (Locked Test)"
+    },
+    "tx15_guardrail_threshold_val": {
+      "file": "tx15_guardrail_threshold_val.csv",
+      "caption": "Độ nhạy của ngưỡng rào chắn 'sleeping dog' (đánh giá trên Validation)"
+    },
+    "tx16_consensus_guardrail": {
+      "file": "tx16_consensus_guardrail.csv",
+      "caption": "So sánh rào chắn 'sleeping dog' gốc và rào chắn đồng thuận giữa các learner"
+    },
+    "tx17_batch_latency": {
+      "file": "tx17_batch_latency.csv",
+      "caption": "Độ trễ và thông lượng chấm điểm dự báo theo kích thước lô"
+    },
+    "tx18_snapshot_feature_stats": {
+      "file": "tx18_snapshot_feature_stats.csv",
+      "caption": "Thống kê đặc trưng hành vi qua ba snapshot"
+    },
+    "tx19_qini_bootstrap": {
+      "file": "tx19_qini_bootstrap.csv",
+      "caption": "Phân phối bootstrap của hệ số Qini theo learner trên Locked Test (100 lần)"
+    },
+    "tx20_selected_profile": {
+      "file": "tx20_selected_profile.csv",
+      "caption": "Hồ sơ khách hàng được MILP chọn so với không được chọn (Locked Test)"
+    },
+    "tx21_selected_uplift": {
+      "file": "tx21_selected_uplift.csv",
+      "caption": "Uplift quan sát của nhóm được MILP chọn và không được chọn (Locked Test)"
+    },
+    "tx22_conservative_value": {
+      "file": "tx22_conservative_value.csv",
+      "caption": "Tối ưu bảo thủ: hàm giá trị dùng cận dưới chi tiêu hoặc trừ bất định uplift"
+    },
+    "tx23_cqr_by_age": {
+      "file": "tx23_cqr_by_age.csv",
+      "caption": "Độ phủ và độ rộng khoảng CQR theo nhóm tuổi (Locked Test)"
+    },
+    "tx24_results_summary": {
+      "file": "tx24_results_summary.csv",
+      "caption": "Tổng hợp kết quả chính theo chu trình tám giai đoạn"
+    },
+    "tx25_segment_cate_by_learner": {
+      "file": "tx25_segment_cate_by_learner.csv",
+      "caption": "CATE dự báo trung bình theo phân khúc của từng learner so với uplift quan sát (Locked + OOT)"
+    },
+    "tx26_segment_cate_agreement": {
+      "file": "tx26_segment_cate_agreement.csv",
+      "caption": "Mức khớp giữa CATE dự báo và uplift quan sát ở mức phân khúc"
+    },
+    "tx27_action_profile": {
+      "file": "tx27_action_profile.csv",
+      "caption": "Hồ sơ khách hàng và uplift quan sát theo luồng hành động (Locked Test)"
+    },
+    "tx28_rule_cooccurrence": {
+      "file": "tx28_rule_cooccurrence.csv",
+      "caption": "Ma trận đồng kích hoạt giữa các quy tắc nghiệp vụ (Locked Test)"
+    },
+    "tx29_psi_consecutive": {
+      "file": "tx29_psi_consecutive.csv",
+      "caption": "PSI giữa các snapshot liên tiếp (15 đặc trưng dịch chuyển mạnh nhất)"
+    },
+    "tx30_snapshot_performance": {
+      "file": "tx30_snapshot_performance.csv",
+      "caption": "Hiệu năng của mô hình đã hiệu chỉnh qua ba snapshot"
+    },
+    "tx31_customer_trace": {
+      "file": "tx31_customer_trace.csv",
+      "caption": "Truy vết năm khách hàng (mỗi luồng hành động một khách) qua toàn bộ pipeline (Locked Test)"
+    },
+    "tx32_power_analysis": {
+      "file": "tx32_power_analysis.csv",
+      "caption": "Phân tích lực thống kê của các so sánh giá trị chính sách (suy ra từ khoảng tin cậy bootstrap)"
+    },
+    "tx33_spo_simulation": {
+      "file": "tx33_spo_simulation.csv",
+      "caption": "Mô phỏng tổng hợp theo thiết kế của Elmachtoub và Grigas (2022): regret chuẩn hóa của PTO và SPO+ (5 lần lặp)"
+    },
+    "tx34_milp_simulation": {
+      "file": "tx34_milp_simulation.csv",
+      "caption": "Mô phỏng tổng hợp: khoảng cách giữa Greedy và MILP theo số ràng buộc chặt (3.000 khách, 5 lần lặp)"
+    },
+    "tx41_mlflow_run": {
+      "file": "tx41_mlflow_run.csv",
+      "caption": "Thông tin lần chạy được ghi vào MLflow Tracking và Model Registry"
+    },
+    "tx42_evidently_drift": {
+      "file": "tx42_evidently_drift.csv",
+      "caption": "Kiểm định trôi dạt dữ liệu Train so với OOT bằng Evidently (DataDriftPreset) và đối chiếu với PSI tự cài đặt"
+    },
+    "tx43_fastapi_tests": {
+      "file": "tx43_fastapi_tests.csv",
+      "caption": "Kiểm thử dịch vụ chấm điểm FastAPI (TestClient, 1.000 khách Locked Test)"
+    },
+    "tx44_fastapi_latency": {
+      "file": "tx44_fastapi_latency.csv",
+      "caption": "Độ trễ của dịch vụ FastAPI (bao gồm tuần tự hóa JSON và tính toàn bộ sáu learner)"
+    },
+    "tx35_econml_causal_forest": {
+      "file": "tx35_econml_causal_forest.csv",
+      "caption": "Kết quả CausalForestDML (EconML) trên ba tập: Qini, AUUC, tương quan với learner đã chọn và khoảng tin cậy CATE"
+    },
+    "tx36_econml_vs_learners": {
+      "file": "tx36_econml_vs_learners.csv",
+      "caption": "Hệ số Qini chuẩn hóa: CausalForestDML (EconML) so với sáu meta-learner tự cài đặt"
+    },
+    "tx37_shap_cate": {
+      "file": "tx37_shap_cate.csv",
+      "caption": "Giải thích mô hình CATE (DR-learner) bằng TreeSHAP trên 5.000 khách Locked Test: 15 đặc trưng quan trọng nhất"
+    },
+    "tx38_policy_tree_selection": {
+      "file": "tx38_policy_tree_selection.csv",
+      "caption": "Chọn cấu hình cây chính sách trên Validation theo lợi nhuận tăng thêm ước lượng kép vững"
+    },
+    "tx39_policy_tree_rules": {
+      "file": "tx39_policy_tree_rules.csv",
+      "caption": "Các quy tắc của cây chính sách được chọn (mỗi dòng là một lá)"
+    },
+    "tx40_policy_tree_eval": {
+      "file": "tx40_policy_tree_eval.csv",
+      "caption": "Giá trị chính sách của cây chính sách so với MILP trên Locked Test và OOT (ước lượng DR, bootstrap ghép cặp)"
+    }
+  },
+  "figures": {
+    "f01_daily_transactions": {
+      "file": "f01_daily_transactions.png",
+      "caption": "Số giao dịch và doanh thu theo ngày"
+    },
+    "f02_client_demographics": {
+      "file": "f02_client_demographics.png",
+      "caption": "Đặc điểm nhân khẩu học và thời điểm mở thẻ"
+    },
+    "f03_tx_distributions": {
+      "file": "f03_tx_distributions.png",
+      "caption": "Phân phối giá trị giao dịch, giờ và ngày trong tuần"
+    },
+    "f04_target_by_group": {
+      "file": "f04_target_by_group.png",
+      "caption": "Tỷ lệ mua hàng theo nhóm can thiệp và đối chứng"
+    },
+    "f05_tx_per_client": {
+      "file": "f05_tx_per_client.png",
+      "caption": "Phân phối số giao dịch trên mỗi khách hàng"
+    },
+    "f00a_eight_stage_cycle": {
+      "file": "f00a_eight_stage_cycle.png",
+      "caption": "Chu trình tám giai đoạn của hệ thống phân tích quyết định - hành động"
+    },
+    "f00b_system_architecture": {
+      "file": "f00b_system_architecture.png",
+      "caption": "Kiến trúc tổng thể ba tầng của hệ thống"
+    },
+    "f00c_graphic_abstract": {
+      "file": "f00c_graphic_abstract.png",
+      "caption": "Graphic Abstract của nghiên cứu"
+    },
+    "f06_temporal_design": {
+      "file": "f06_temporal_design.png",
+      "caption": "Thiết kế dữ liệu theo trục thời gian với ba snapshot và thời điểm chiến dịch"
+    },
+    "f07_causal_dag": {
+      "file": "f07_causal_dag.png",
+      "caption": "DAG nhân quả: ngẫu nhiên hóa cắt các đường cửa sau từ X, W tới T"
+    },
+    "f08_split_balance": {
+      "file": "f08_split_balance.png",
+      "caption": "Quy mô, tỷ lệ can thiệp và tỷ lệ mua theo từng tập"
+    },
+    "f09_feature_dists_train_vs_oot": {
+      "file": "f09_feature_dists_train_vs_oot.png",
+      "caption": "Phân phối đặc trưng chính: Train so với cohort Out-of-Time"
+    },
+    "f10_reliability": {
+      "file": "f10_reliability.png",
+      "caption": "Biểu đồ độ tin cậy (reliability diagram) trước và sau hiệu chỉnh"
+    },
+    "f11_prob_hist": {
+      "file": "f11_prob_hist.png",
+      "caption": "Phân phối xác suất dự báo theo phương pháp hiệu chỉnh"
+    },
+    "f12_roc_oot": {
+      "file": "f12_roc_oot.png",
+      "caption": "Đường ROC của các mô hình dự báo trên tập Out-of-Time"
+    },
+    "f13_forecast_importance": {
+      "file": "f13_forecast_importance.png",
+      "caption": "Tầm quan trọng đặc trưng của mô hình dự báo mua hàng"
+    },
+    "f14_decision_curve": {
+      "file": "f14_decision_curve.png",
+      "caption": "Đường cong quyết định (net benefit) của mô hình dự báo"
+    },
+    "f15_cqr_coverage": {
+      "file": "f15_cqr_coverage.png",
+      "caption": "Độ phủ và độ rộng khoảng dự báo CQR theo thập phân vị"
+    },
+    "f16_cqr_intervals": {
+      "file": "f16_cqr_intervals.png",
+      "caption": "Khoảng dự báo chi tiêu CQR so với giá trị thực tế"
+    },
+    "f17_love_plot": {
+      "file": "f17_love_plot.png",
+      "caption": "Love plot: SMD của các hiệp biến giữa hai nhóm"
+    },
+    "f18_ate_forest": {
+      "file": "f18_ate_forest.png",
+      "caption": "Forest plot các ước lượng ATE/ATT/ATC với KTC 95%"
+    },
+    "f19_propensity_overlap": {
+      "file": "f19_propensity_overlap.png",
+      "caption": "Phân phối điểm xu hướng ước lượng - kiểm tra overlap"
+    },
+    "f20_placebo": {
+      "file": "f20_placebo.png",
+      "caption": "Kiểm định placebo: phân phối ATE khi hoán vị can thiệp so với ATE thật"
+    },
+    "f21_qini_locked": {
+      "file": "f21_qini_locked.png",
+      "caption": "Đường Qini của các meta-learner trên tập Locked Test"
+    },
+    "f22_qini_oot": {
+      "file": "f22_qini_oot.png",
+      "caption": "Đường Qini của các meta-learner trên tập Out-of-Time"
+    },
+    "f23_uplift_deciles": {
+      "file": "f23_uplift_deciles.png",
+      "caption": "Uplift quan sát (KTC 95%) và uplift dự báo theo thập phân vị"
+    },
+    "f24_learner_corr": {
+      "file": "f24_learner_corr.png",
+      "caption": "Ma trận tương quan hạng giữa ước lượng CATE của các learner"
+    },
+    "f25_cate_distribution": {
+      "file": "f25_cate_distribution.png",
+      "caption": "Phân phối CATE ước lượng của các learner"
+    },
+    "f26_segment_heterogeneity": {
+      "file": "f26_segment_heterogeneity.png",
+      "caption": "Uplift quan sát và dự báo theo các chiều phân khúc"
+    },
+    "f27_cate_dependence": {
+      "file": "f27_cate_dependence.png",
+      "caption": "Quan hệ giữa CATE dự báo và các đặc trưng chính"
+    },
+    "f28_cate_importance": {
+      "file": "f28_cate_importance.png",
+      "caption": "Tầm quan trọng đặc trưng của mô hình CATE"
+    },
+    "f29_spo_training": {
+      "file": "f29_spo_training.png",
+      "caption": "Đường huấn luyện SPO+: hàm mất mát và regret trên Validation"
+    },
+    "f30_regret_comparison": {
+      "file": "f30_regret_comparison.png",
+      "caption": "Regret chuẩn hóa của các phương pháp ra quyết định"
+    },
+    "f31_error_vs_regret": {
+      "file": "f31_error_vs_regret.png",
+      "caption": "Quan hệ phi tuyến giữa sai số dự báo và regret"
+    },
+    "f32_decision_score_dist": {
+      "file": "f32_decision_score_dist.png",
+      "caption": "Phân phối điểm quyết định (giá trị tăng thêm kỳ vọng) trên Locked Test"
+    },
+    "f33_segment_allocation": {
+      "file": "f33_segment_allocation.png",
+      "caption": "Phân bổ lượt gửi theo nhóm tuổi so với sàn và trần ràng buộc"
+    },
+    "f34_policy_value_locked": {
+      "file": "f34_policy_value_locked.png",
+      "caption": "Lợi nhuận tăng thêm của các chính sách trên tập Locked Test"
+    },
+    "f34_policy_value_oot": {
+      "file": "f34_policy_value_oot.png",
+      "caption": "Lợi nhuận tăng thêm của các chính sách trên tập Out-of-Time"
+    },
+    "f35_budget_sensitivity": {
+      "file": "f35_budget_sensitivity.png",
+      "caption": "Độ nhạy của giá trị mục tiêu và lợi nhuận tăng thêm theo năng lực gửi"
+    },
+    "f36_economic_sensitivity": {
+      "file": "f36_economic_sensitivity.png",
+      "caption": "Bản đồ nhiệt độ nhạy lợi nhuận theo giả định kinh tế"
+    },
+    "f37_solution_stability": {
+      "file": "f37_solution_stability.png",
+      "caption": "Độ ổn định của nghiệm MILP dưới bất định của uplift"
+    },
+    "f39_milp_to_action": {
+      "file": "f39_milp_to_action.png",
+      "caption": "Luồng chuyển từ quyết định MILP sang hành động sau định tuyến"
+    },
+    "f38_action_distribution": {
+      "file": "f38_action_distribution.png",
+      "caption": "Tỷ trọng các luồng hành động trên Locked Test và Out-of-Time"
+    },
+    "f40_latency": {
+      "file": "f40_latency.png",
+      "caption": "Phân phối độ trễ đầu cuối và P95 theo từng bước của luồng chấm điểm"
+    },
+    "f41_psi": {
+      "file": "f41_psi.png",
+      "caption": "PSI của các đặc trưng trôi dạt mạnh nhất theo ba phép so sánh"
+    },
+    "f42_label_delay": {
+      "file": "f42_label_delay.png",
+      "caption": "Độ trễ nhãn và sai lệch của chỉ số giám sát"
+    },
+    "f43_champion_challenger": {
+      "file": "f43_champion_challenger.png",
+      "caption": "Đối sánh Current và Challenger: hiệu chỉnh xác suất và đường Qini"
+    },
+    "fx01_feat_treat_control_1": {
+      "file": "fx01_feat_treat_control_1.png",
+      "caption": "Phân phối đặc trưng giữa nhóm can thiệp và đối chứng (nhóm 1)"
+    },
+    "fx01_feat_treat_control_2": {
+      "file": "fx01_feat_treat_control_2.png",
+      "caption": "Phân phối đặc trưng giữa nhóm can thiệp và đối chứng (nhóm 2)"
+    },
+    "fx01_feat_treat_control_3": {
+      "file": "fx01_feat_treat_control_3.png",
+      "caption": "Phân phối đặc trưng giữa nhóm can thiệp và đối chứng (nhóm 3)"
+    },
+    "fx01_feat_treat_control_4": {
+      "file": "fx01_feat_treat_control_4.png",
+      "caption": "Phân phối đặc trưng giữa nhóm can thiệp và đối chứng (nhóm 4)"
+    },
+    "fx01_feat_treat_control_5": {
+      "file": "fx01_feat_treat_control_5.png",
+      "caption": "Phân phối đặc trưng giữa nhóm can thiệp và đối chứng (nhóm 5)"
+    },
+    "fx02_feature_corr": {
+      "file": "fx02_feature_corr.png",
+      "caption": "Ma trận tương quan hạng Spearman giữa các đặc trưng"
+    },
+    "fx03_segment_buy_rates": {
+      "file": "fx03_segment_buy_rates.png",
+      "caption": "Tỷ lệ mua của nhóm can thiệp và đối chứng theo phân khúc"
+    },
+    "fx04_uplift_age_freq": {
+      "file": "fx04_uplift_age_freq.png",
+      "caption": "Bản đồ nhiệt uplift quan sát theo hai chiều tuổi và tần suất mua"
+    },
+    "fx05_pr_gains": {
+      "file": "fx05_pr_gains.png",
+      "caption": "Đường Precision–Recall và đường gains tích lũy của mô hình dự báo"
+    },
+    "fx06_calibration_by_age": {
+      "file": "fx06_calibration_by_age.png",
+      "caption": "Biểu đồ độ tin cậy theo nhóm tuổi (Locked Test)"
+    },
+    "fx07_ablation": {
+      "file": "fx07_ablation.png",
+      "caption": "AUC khi bỏ hoặc chỉ giữ từng nhóm đặc trưng"
+    },
+    "fx08_learning_curve": {
+      "file": "fx08_learning_curve.png",
+      "caption": "Đường cong học của mô hình dự báo"
+    },
+    "fx09_learner_deciles_val": {
+      "file": "fx09_learner_deciles_val.png",
+      "caption": "Uplift quan sát và dự báo theo thập phân vị cho sáu learner – Validation"
+    },
+    "fx09_learner_deciles_locked": {
+      "file": "fx09_learner_deciles_locked.png",
+      "caption": "Uplift quan sát và dự báo theo thập phân vị cho sáu learner – Locked Test"
+    },
+    "fx09_learner_deciles_oot": {
+      "file": "fx09_learner_deciles_oot.png",
+      "caption": "Uplift quan sát và dự báo theo thập phân vị cho sáu learner – Out-of-Time"
+    },
+    "fx10_policy_curves": {
+      "file": "fx10_policy_curves.png",
+      "caption": "Đường lợi nhuận DR theo tỷ lệ khách được nhắm cho từng learner"
+    },
+    "fx11_spo_batch_sensitivity": {
+      "file": "fx11_spo_batch_sensitivity.png",
+      "caption": "Regret chuẩn hóa theo kích thước lô và tỷ lệ chọn"
+    },
+    "fx12_milp_score_sources": {
+      "file": "fx12_milp_score_sources.png",
+      "caption": "Lợi nhuận DR của nghiệm MILP theo nguồn điểm quyết định"
+    },
+    "fx13_fairness_stress": {
+      "file": "fx13_fairness_stress.png",
+      "caption": "Cái giá của công bằng theo mức sàn độ phủ và trần tập trung"
+    },
+    "fx14_consensus_guardrail": {
+      "file": "fx14_consensus_guardrail.png",
+      "caption": "Lợi nhuận DR theo phương án rào chắn 'sleeping dog'"
+    },
+    "fx15_batch_latency": {
+      "file": "fx15_batch_latency.png",
+      "caption": "Thời gian chấm điểm mỗi khách hàng theo kích thước lô"
+    },
+    "fx16_snapshot_feature_trends": {
+      "file": "fx16_snapshot_feature_trends.png",
+      "caption": "Diễn biến của các đặc trưng hành vi qua ba snapshot"
+    },
+    "fx17_feat_train_oot_1": {
+      "file": "fx17_feat_train_oot_1.png",
+      "caption": "Phân phối đặc trưng giữa Train và cohort Out-of-Time (nhóm 1)"
+    },
+    "fx17_feat_train_oot_2": {
+      "file": "fx17_feat_train_oot_2.png",
+      "caption": "Phân phối đặc trưng giữa Train và cohort Out-of-Time (nhóm 2)"
+    },
+    "fx17_feat_train_oot_3": {
+      "file": "fx17_feat_train_oot_3.png",
+      "caption": "Phân phối đặc trưng giữa Train và cohort Out-of-Time (nhóm 3)"
+    },
+    "fx17_feat_train_oot_4": {
+      "file": "fx17_feat_train_oot_4.png",
+      "caption": "Phân phối đặc trưng giữa Train và cohort Out-of-Time (nhóm 4)"
+    },
+    "fx17_feat_train_oot_5": {
+      "file": "fx17_feat_train_oot_5.png",
+      "caption": "Phân phối đặc trưng giữa Train và cohort Out-of-Time (nhóm 5)"
+    },
+    "fx18_qini_val": {
+      "file": "fx18_qini_val.png",
+      "caption": "Đường Qini của các meta-learner trên tập Validation (tập dùng để lựa chọn)"
+    },
+    "fx19_qini_bootstrap": {
+      "file": "fx19_qini_bootstrap.png",
+      "caption": "Phân phối bootstrap của hệ số Qini theo learner trên Locked Test"
+    },
+    "fx20_selected_profile": {
+      "file": "fx20_selected_profile.png",
+      "caption": "Khác biệt chuẩn hóa giữa khách hàng được và không được MILP chọn"
+    },
+    "fx21_forecast_pdp": {
+      "file": "fx21_forecast_pdp.png",
+      "caption": "Đồ thị phụ thuộc riêng phần của mô hình dự báo theo sáu đặc trưng quan trọng"
+    },
+    "fx22_segment_cate_by_learner": {
+      "file": "fx22_segment_cate_by_learner.png",
+      "caption": "CATE dự báo theo phân khúc của sáu learner so với uplift quan sát"
+    },
+    "fx23_reliability_snapshots": {
+      "file": "fx23_reliability_snapshots.png",
+      "caption": "Biểu đồ độ tin cậy của mô hình đã hiệu chỉnh qua ba snapshot"
+    },
+    "fx24_power_curve": {
+      "file": "fx24_power_curve.png",
+      "caption": "Lực thống kê phát hiện lợi nhuận tăng thêm của MILP theo cỡ tập kiểm định (đường chấm: cỡ tập hiện tại)"
+    },
+    "fx25_spo_simulation": {
+      "file": "fx25_spo_simulation.png",
+      "caption": "Mô phỏng tổng hợp: regret chuẩn hóa của PTO và SPO+ theo mức sai đặc tả và loại nhiễu nhãn"
+    },
+    "fx26_milp_simulation": {
+      "file": "fx26_milp_simulation.png",
+      "caption": "Mô phỏng tổng hợp: phần giá trị MILP vượt Greedy + sửa chữa theo kịch bản ràng buộc (thanh lỗi: lần lặp xấu nhất của Greedy)"
+    },
+    "fx27_econml_qini": {
+      "file": "fx27_econml_qini.png",
+      "caption": "Đường Qini của CausalForestDML (EconML) và learner đã chọn trên ba tập"
+    },
+    "fx28_shap_cate_beeswarm": {
+      "file": "fx28_shap_cate_beeswarm.png",
+      "caption": "Biểu đồ SHAP của mô hình CATE: mỗi điểm là một khách hàng, màu thể hiện giá trị đặc trưng"
+    },
+    "fx29_shap_dependence": {
+      "file": "fx29_shap_dependence.png",
+      "caption": "Quan hệ giữa giá trị đặc trưng và đóng góp SHAP vào CATE (ba đặc trưng hàng đầu)"
+    },
+    "fx30_policy_tree": {
+      "file": "fx30_policy_tree.png",
+      "caption": "Lợi nhuận tăng thêm của cây chính sách và MILP (thanh lỗi: KTC95 bootstrap)"
+    },
+    "fx31_dashboard_page1": {
+      "file": "fx31_dashboard_page1.png",
+      "caption": "Dashboard giám sát Streamlit – trang tổng quan và cổng phát hành"
+    },
+    "fx32_dashboard_page2": {
+      "file": "fx32_dashboard_page2.png",
+      "caption": "Dashboard giám sát Streamlit – trang trôi dạt dữ liệu và mô hình"
+    },
+    "fx33_dashboard_page3": {
+      "file": "fx33_dashboard_page3.png",
+      "caption": "Dashboard giám sát Streamlit – trang hiệu quả chính sách"
+    },
+    "fx34_dashboard_page4": {
+      "file": "fx34_dashboard_page4.png",
+      "caption": "Dashboard giám sát Streamlit – trang uplift và giải thích"
+    },
+    "fx35_dashboard_page5": {
+      "file": "fx35_dashboard_page5.png",
+      "caption": "Dashboard giám sát Streamlit – trang vận hành dịch vụ"
+    }
+  }
+}

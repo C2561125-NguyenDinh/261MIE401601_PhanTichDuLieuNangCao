@@ -1,0 +1,11 @@
+Hoạt động,CRM / Marketing,Tài chính,Dữ liệu & Phân tích,Kỹ thuật vận hành,Pháp chế,Ban điều hành
+Xác định mục tiêu và ngân sách chiến dịch,R,C,C,I,I,A
+"Cung cấp tham số kinh tế (biên lợi nhuận, chi phí)",C,R,I,I,I,A
+Xây dựng và huấn luyện mô hình,C,I,R,C,I,A
+Thiết kế và phê duyệt quy tắc nghiệp vụ,R,C,C,I,C,A
+Duyệt thủ công các trường hợp HUMAN_REVIEW,R,I,C,I,I,A
+Kiểm định cổng phát hành,I,C,R,C,I,A
+Vận hành pipeline và gửi tin,I,I,C,R,I,A
+Giám sát trôi dạt và ứng phó sự cố,I,I,R,R,I,A
+Xử lý khiếu nại khách hàng,R,I,C,C,C,A
+Rà soát tuân thủ và công bằng,C,I,C,I,R,A

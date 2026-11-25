@@ -1,0 +1,61 @@
+﻿Tập,Learner,Thập phân vị,Uplift dự báo,Uplift quan sát,SE
+locked,S-learner,1,0.091,0.1084,0.0171
+locked,S-learner,2,0.0504,0.0087,0.0171
+locked,S-learner,3,0.0379,0.041,0.0171
+locked,S-learner,4,0.0295,0.0495,0.0171
+locked,S-learner,5,0.0228,0.0165,0.0171
+locked,S-learner,6,0.017,0.0018,0.0167
+locked,S-learner,7,0.0116,-0.0047,0.0157
+locked,S-learner,8,0.007,0.021,0.0143
+locked,S-learner,9,0.0031,0.0368,0.0122
+locked,S-learner,10,-0.0035,0.028,0.0151
+locked,T-learner,1,0.181,0.0817,0.0171
+locked,T-learner,2,0.1043,0.0089,0.0171
+locked,T-learner,3,0.0716,0.0239,0.017
+locked,T-learner,4,0.048,0.0312,0.0167
+locked,T-learner,5,0.0291,0.0394,0.0162
+locked,T-learner,6,0.0135,0.0174,0.0154
+locked,T-learner,7,-0.0001,0.0165,0.0148
+locked,T-learner,8,-0.0162,0.0371,0.0159
+locked,T-learner,9,-0.0423,0.0109,0.0167
+locked,T-learner,10,-0.1027,0.0409,0.017
+locked,X-learner,1,0.1156,0.1023,0.0171
+locked,X-learner,2,0.0662,0.0379,0.0171
+locked,X-learner,3,0.0481,0.0172,0.017
+locked,X-learner,4,0.0352,0.0046,0.0169
+locked,X-learner,5,0.0252,0.0221,0.0166
+locked,X-learner,6,0.0168,0.0154,0.0161
+locked,X-learner,7,0.0095,0.0357,0.0154
+locked,X-learner,8,0.0025,0.0187,0.0151
+locked,X-learner,9,-0.0061,0.0217,0.0154
+locked,X-learner,10,-0.0256,0.0378,0.0168
+locked,R-learner,1,0.1218,0.0906,0.0171
+locked,R-learner,2,0.0668,0.0525,0.0171
+locked,R-learner,3,0.0481,0.024,0.017
+locked,R-learner,4,0.0354,0.0053,0.0169
+locked,R-learner,5,0.0254,0.0103,0.0165
+locked,R-learner,6,0.0172,0.0214,0.0158
+locked,R-learner,7,0.0098,0.0138,0.0154
+locked,R-learner,8,0.0024,0.0315,0.0153
+locked,R-learner,9,-0.0073,0.0154,0.0156
+locked,R-learner,10,-0.0309,0.0437,0.0169
+locked,DR-learner,1,0.1225,0.0982,0.0171
+locked,DR-learner,2,0.0669,0.0284,0.0171
+locked,DR-learner,3,0.0482,0.0261,0.017
+locked,DR-learner,4,0.0354,0.0113,0.0169
+locked,DR-learner,5,0.0254,0.0255,0.0165
+locked,DR-learner,6,0.0169,0.0127,0.0159
+locked,DR-learner,7,0.0094,0.0461,0.0153
+locked,DR-learner,8,0.002,0.0099,0.0152
+locked,DR-learner,9,-0.0076,0.0237,0.0157
+locked,DR-learner,10,-0.0311,0.031,0.0169
+locked,Class Transformation,1,0.1943,0.0816,0.0168
+locked,Class Transformation,2,0.1137,0.0267,0.0169
+locked,Class Transformation,3,0.0811,0.0101,0.0169
+locked,Class Transformation,4,0.0571,0.0304,0.0168
+locked,Class Transformation,5,0.0372,0.0337,0.0167
+locked,Class Transformation,6,0.0185,0.0166,0.0166
+locked,Class Transformation,7,-0.0005,0.0179,0.0166
+locked,Class Transformation,8,-0.0225,0.0387,0.0163
+locked,Class Transformation,9,-0.051,0.0381,0.0163
+locked,Class Transformation,10,-0.1171,0.0143,0.016

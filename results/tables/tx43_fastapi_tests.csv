@@ -1,0 +1,9 @@
+﻿Kiểm thử,Kết quả,Chi tiết
+GET /health trả về phiên bản và mã băm mô hình,PASS,"v1.0.0, sha256 266dbd1112cd"
+V̂ qua API trùng chấm điểm theo lô (1.000 khách),PASS,0 khác biệt
+Hành động qua API trùng chấm điểm theo lô,PASS,0 khác biệt
+V̂ của dịch vụ trùng V̂ của giai đoạn 5,PASS,sai lệch lớn nhất 0.00e+00
+Gọi lặp cùng khách cho cùng khóa lũy đẳng,PASS,0ecbd1222751123f…
+client_id không tồn tại trả về 404,PASS,HTTP 404
+Yêu cầu thiếu dữ liệu trả về 422,PASS,HTTP 422
+POST /score_batch 1.000 khách,PASS,182 ms cho cả lô

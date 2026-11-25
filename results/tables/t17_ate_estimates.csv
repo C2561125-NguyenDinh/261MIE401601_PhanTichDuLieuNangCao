@@ -1,0 +1,10 @@
+﻿Ước lượng,Tập,Tham số,Giá trị,SE,KTC95_dưới,KTC95_trên,n
+Chênh lệch trung bình (Neyman),Toàn bộ,ATE,0.0332,0.0022,0.029,0.0375,200039
+Chênh lệch trung bình (Neyman),Train+Val,ATE,0.0308,0.0026,0.0257,0.036,136024
+Chênh lệch trung bình (Neyman),Locked Test,ATE,0.0308,0.0053,0.0205,0.0411,34009
+Chênh lệch trung bình (Neyman),Out-of-Time,ATE,0.0463,0.0056,0.0353,0.0574,30006
+"AIPW (cross-fitting, LightGBM)",Train+Val,ATE,0.0288,0.0023,0.0243,0.0334,136024
+"AIPW (cross-fitting, LightGBM)",Train+Val,ATT,0.0287,0.0023,0.0241,0.0333,136024
+"AIPW (cross-fitting, LightGBM)",Train+Val,ATC,0.029,0.0024,0.0244,0.0336,136024
+Double ML (DoubleML IRM),Train+Val,ATE,0.0287,0.0023,0.0241,0.0332,136024
+Double ML (DoubleML IRM),Train+Val,ATT,0.0279,0.0023,0.0233,0.0325,136024

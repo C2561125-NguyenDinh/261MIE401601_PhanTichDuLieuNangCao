@@ -1,0 +1,105 @@
+# =====================================================================
+# Cấu hình toàn cục - Hệ thống phân bổ ngân sách khuyến mãi giữ chân
+# khách hàng theo uplift (X5 RetailHero)
+# Mọi giả định kinh doanh được khai báo TẠI ĐÂY và được phân tích độ nhạy.
+# =====================================================================
+seed: 42
+campaign_id: "X5_SMS_RETENTION_2019"
+model_version: "v1.0.0"
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  results: results
+  figures: results/figures
+  tables: results/tables
+  models: models
+
+data:
+  base_url: "https://sklift.s3.eu-west-2.amazonaws.com"
+  files:
+    train: uplift_train.csv.gz
+    clients: clients.csv.gz
+    purchases: purchases.csv.gz
+  chunksize: 2000000
+
+# ---------------- Thiết kế thời gian ----------------
+temporal:
+  horizon_days: 14          # kỳ dự báo H cho bài toán dự báo mua hàng
+  lookback_max_days: 56     # cửa sổ nhìn lại tối đa khi tính đặc trưng
+  n_snapshots: 3            # S1 (train), S2 (validation/locked), S3 (out-of-time)
+
+# ---------------- Chia tách dữ liệu ----------------
+split:
+  oot_issue_quantile: 0.85  # 15% khách mở thẻ muộn nhất -> cohort Out-of-Time
+  train: 0.60
+  val: 0.20
+  locked: 0.20
+
+# ---------------- Giả định kinh tế (đơn vị: RUB) ----------------
+business:
+  margin_rate: 0.25         # biên lợi nhuận gộp trên doanh thu
+  contact_cost: 1.0         # chi phí gửi 1 SMS
+  incentive_cost: 2.0       # chi phí ưu đãi phát sinh khi khách được gửi SMS và mua hàng
+  aov_cap_quantile: 0.99    # cắt đuôi giá trị giỏ hàng khi tính giá trị
+
+# ---------------- Mô hình ----------------
+lgbm:
+  n_estimators: 400
+  learning_rate: 0.05
+  num_leaves: 31
+  min_child_samples: 200
+  subsample: 0.8
+  subsample_freq: 1
+  colsample_bytree: 0.8
+  reg_lambda: 1.0
+  verbose: -1
+
+causal:
+  n_folds: 5                # cross-fitting cho DR / DML
+  n_bootstrap: 200          # bootstrap khoảng tin cậy
+  propensity_clip: 0.01
+
+conformal:
+  alpha: 0.10               # mức sai số 10% -> độ phủ mục tiêu 90%
+
+# ---------------- SPO+ ----------------
+spo:
+  batch_size: 200           # số khách / một bài toán quyết định
+  k_frac: 0.30              # chọn 30% khách trong mỗi lô
+  epochs: 40
+  lr: 0.01
+  l2: 0.0001
+  patience: 6
+
+# ---------------- MILP ----------------
+milp:
+  solver: SCIP
+  time_limit_s: 120
+  capacity_frac: 0.30       # năng lực gửi SMS = 30% tập khách
+  budget_frac_of_capacity_cost: 0.80   # ngân sách = 80% chi phí nếu gửi đủ năng lực
+  segment_max_share: 0.40   # một nhóm tuổi không chiếm quá 40% số lượt gửi
+  segment_min_coverage: 0.10 # mỗi nhóm tuổi được phủ tối thiểu 10% số khách của nhóm
+  budget_grid: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50]
+  n_bootstrap: 200
+
+# ---------------- Action Router ----------------
+router:
+  sleeping_dog_tau: -0.01   # uplift dự báo < -1 điểm % -> chặn
+  uncertainty_quantile: 0.95 # bất đồng giữa các learner thuộc top 5% -> người duyệt
+  vip_quantile: 0.99        # khách chi tiêu top 1% -> người duyệt
+  recent_purchase_days: 2   # vừa mua trong 2 ngày -> tạm hoãn
+  review_capacity: 500      # năng lực duyệt thủ công / chiến dịch
+
+# ---------------- MLOps ----------------
+mlops:
+  latency_requests: 2000
+  psi_warn: 0.10
+  psi_alert: 0.25
+  gates:
+    min_auc: 0.70
+    max_ece: 0.03
+    min_qini_pos: 0.0
+    max_p95_latency_ms: 50.0
+    min_policy_lift: 0.0
+    max_psi_alert_features: 3

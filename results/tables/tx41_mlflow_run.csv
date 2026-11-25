@@ -1,0 +1,8 @@
+﻿Hạng mục,Giá trị
+Experiment,x5-uplift-decision-system
+Run ID,afb344822cfb
+Số tham số đã ghi,59
+Số chỉ số đã ghi,22
+"Số tạo tác (bảng, mô hình)",10
+Mô hình đăng ký,"x5_forecast_gbm, phiên bản 1, bí danh champion"
+Backend,SQLite cục bộ (mlops/mlflow.db)

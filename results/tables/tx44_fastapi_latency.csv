@@ -1,0 +1,3 @@
+﻿Đường gọi,P50 (ms),P95 (ms),P99 (ms),Max (ms)
+"POST /score (từng khách, qua HTTP nội bộ)",34.7322,47.3057,59.5619,80.9688
+POST /score_batch (1.000 khách),182.2877,,,

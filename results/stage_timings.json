@@ -1,0 +1,12 @@
+{
+  "1. Dữ liệu, checksum, hồ sơ dữ liệu": 16.0,
+  "0. Thiết kế bài toán & sơ đồ": 0.6,
+  "2. Đặc trưng theo thời gian & chia tách": 20.3,
+  "3. Dự báo, hiệu chỉnh, bất định": 26.4,
+  "4. Nhân quả & uplift": 148.8,
+  "5. Predict-Then-Optimize & SPO+": 2.3,
+  "6. Tối ưu MILP": 427.3,
+  "7. Action Router": 3.0,
+  "8. MLOps & giám sát": 61.1,
+  "9. Phân tích mở rộng & kiểm tra độ vững": 427.2
+}

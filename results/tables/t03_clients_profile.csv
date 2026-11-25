@@ -1,0 +1,6 @@
+﻿Biến,Kiểu,Thiếu (%),Số giá trị khác nhau,Min,Max
+client_id,str,0.0,400162,000012768d,fffff6ce77
+first_issue_date,datetime64[us],0.0,396725,2017-04-04 18:24:18,2019-03-15 21:50:56
+first_redeem_date,datetime64[us],8.8637,362527,2017-04-11 09:42:20,2019-11-20 01:14:10
+age,int64,0.0,290,-7491,1901
+gender,str,0.0,3,F,U

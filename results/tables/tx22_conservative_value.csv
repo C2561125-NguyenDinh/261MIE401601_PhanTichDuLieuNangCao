@@ -1,0 +1,10 @@
+﻿Tập,Hàm giá trị,Số gửi,Số khách V̂>0,Giá trị mục tiêu,Lợi nhuận DR (RUB),Tỷ lệ mục tiêu / DR
+val,"Ensemble, chi tiêu điểm",8643,22016,127723.6585,41438.3606,3.0823
+val,"Ensemble, chi tiêu cận dưới CQR",8277,8207,19056.6153,48498.6724,0.3929
+val,Ensemble − 1 độ lệch chuẩn learner,8786,10084,48725.2755,8200.825,5.9415
+locked,"Ensemble, chi tiêu điểm",8647,22044,128304.9556,41837.6646,3.0667
+locked,"Ensemble, chi tiêu cận dưới CQR",8310,8231,19873.7022,46821.5654,0.4245
+locked,Ensemble − 1 độ lệch chuẩn learner,8806,9999,49058.4886,31285.9114,1.5681
+oot,"Ensemble, chi tiêu điểm",8097,25134,143735.7699,69345.8752,2.0727
+oot,"Ensemble, chi tiêu cận dưới CQR",7857,13132,19766.479,48074.7498,0.4112
+oot,Ensemble − 1 độ lệch chuẩn learner,7914,15380,72901.6263,44685.8015,1.6314

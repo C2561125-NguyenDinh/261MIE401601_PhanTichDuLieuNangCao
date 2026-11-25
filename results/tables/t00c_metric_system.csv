@@ -1,0 +1,13 @@
+﻿Tầng,Chỉ số,Câu hỏi trả lời,Tập đánh giá
+Chất lượng dự báo,"AUC, PR-AUC, Log loss",Khả năng phân biệt khách mua/không mua,"Validation, Locked, OOT"
+Hiệu chỉnh xác suất,"Brier, ECE, MCE, biểu đồ độ tin cậy",Xác suất dự báo khớp tần suất thực,"Locked, OOT"
+Bất định,Độ phủ & độ rộng khoảng CQR,Khoảng chi tiêu đạt độ phủ mục tiêu 90%,"Locked, OOT"
+Giá trị dự báo,Net benefit theo ngưỡng,Dự báo có hữu ích cho quyết định,Locked
+Nhân quả trung bình,ATE/ATT/ATC + KTC 95%,Tác động trung bình của SMS,"Train+Val, Locked, OOT"
+Uplift,"Qini chuẩn hóa, AUUC, uplift@k, thập phân vị",Xếp hạng theo tác động biên,"Validation, Locked, OOT"
+Tổn thất quyết định,"Regret, regret chuẩn hóa",Chi phí của quyết định dựa trên dự báo,"Validation, Locked, OOT"
+Giá trị thực hiện,"Lợi nhuận tăng thêm DR + KTC bootstrap, ROI tăng thêm",Giá trị kinh tế của chính sách,"Locked (policy validation), OOT"
+Tối ưu hóa,"Khoảng cách LP–MILP, Greedy–MILP, thời gian giải, Jaccard",Chất lượng và độ ổn định nghiệm,Locked
+Vận hành,"P50/P95/P99 độ trễ, idempotency","Đáp ứng yêu cầu thời gian thực, không gửi trùng",Mô phỏng trực tuyến
+Trôi dạt,"PSI, Brier/ECE theo thời gian, Action TVD, độ trễ nhãn","Phát hiện dịch chuyển dữ liệu, mô hình, chính sách","Train→Locked/OOT, S1→S3"
+Tái huấn luyện,"Current vs Challenger (AUC, ECE, Qini)",Có nên thăng hạng mô hình mới,OOT

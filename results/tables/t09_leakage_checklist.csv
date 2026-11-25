@@ -1,0 +1,10 @@
+﻿Kiểm tra rò rỉ,Cơ chế thực thi trong mã,Kết quả
+Đặc trưng chỉ dùng giao dịch có dt < mốc cắt,Lọc tx['dt'] < cutoff trong make_features,Đạt
+Ngày đổi điểm đầu tiên sau mốc cắt bị che,first_redeem_date.where(< cutoff),Đạt
+Nhãn dự báo nằm hoàn toàn sau mốc cắt,"Cửa sổ [cutoff, cutoff+H)",Đạt
+Khách chưa mở thẻ tại mốc cắt bị loại,tenure_days >= 0,Đạt
+Không dùng biến target/treatment làm đặc trưng,Tách riêng cột trong campaign.parquet,Đạt
+Tách thực thể giữa Train/Val/Locked,"Chia theo client_id, phân tầng (T, Y)",Đạt
+Cohort Out-of-Time không giao Train,first_issue_date >= 2018-10-23,Đạt
+"Hiệu chỉnh xác suất học trên tập Validation, không học trên Locked",s3_forecast.calibrate,Đạt
+Siêu tham số không chọn trên Locked Test / OOT,Locked chỉ đánh giá một lần,Đạt

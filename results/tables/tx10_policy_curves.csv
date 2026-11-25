@@ -1,0 +1,121 @@
+﻿Tập,Learner,Tỷ lệ nhắm,Lượt mua tăng thêm (DR),Lợi nhuận DR (RUB)
+locked,S-learner,0.1,349.2233,34642.1757
+locked,S-learner,0.2,386.5201,37735.2536
+locked,S-learner,0.3,515.8387,58083.1503
+locked,S-learner,0.4,662.7684,91387.4677
+locked,S-learner,0.5,709.5793,95120.4852
+locked,S-learner,0.6,721.424,85696.0865
+locked,S-learner,0.7,764.4199,89400.1041
+locked,S-learner,0.8,842.6556,94531.0481
+locked,S-learner,0.9,985.2023,125009.8432
+locked,S-learner,1.0,1085.2023,141650.2991
+locked,T-learner,0.1,282.2722,29479.5332
+locked,T-learner,0.2,312.2404,35846.5577
+locked,T-learner,0.3,385.7508,44076.5372
+locked,T-learner,0.4,504.3481,64697.0017
+locked,T-learner,0.5,613.1482,70526.1619
+locked,T-learner,0.6,700.5071,93811.0041
+locked,T-learner,0.7,746.8714,84497.8876
+locked,T-learner,0.8,866.387,107313.5235
+locked,T-learner,0.9,910.2011,102751.8784
+locked,T-learner,1.0,1085.2023,141650.2991
+locked,X-learner,0.1,330.061,38577.7669
+locked,X-learner,0.2,437.6071,66855.7631
+locked,X-learner,0.3,488.2814,63486.1192
+locked,X-learner,0.4,525.0104,49470.2805
+locked,X-learner,0.5,584.7958,60805.6397
+locked,X-learner,0.6,648.2379,55369.5304
+locked,X-learner,0.7,778.6465,66950.7005
+locked,X-learner,0.8,830.354,64682.039
+locked,X-learner,0.9,925.7376,97145.1147
+locked,X-learner,1.0,1085.2023,141650.2991
+locked,R-learner,0.1,281.7489,30771.1819
+locked,R-learner,0.2,434.9608,52621.8382
+locked,R-learner,0.3,505.6044,61815.2155
+locked,R-learner,0.4,560.4713,67996.4165
+locked,R-learner,0.5,588.9985,56204.5918
+locked,R-learner,0.6,641.7057,54868.9895
+locked,R-learner,0.7,716.5661,56976.65
+locked,R-learner,0.8,820.9975,85219.0755
+locked,R-learner,0.9,881.753,90898.9991
+locked,R-learner,1.0,1085.2023,141650.2991
+locked,DR-learner,0.1,296.898,32535.0111
+locked,DR-learner,0.2,395.6859,53046.1795
+locked,DR-learner,0.3,486.1576,46250.4347
+locked,DR-learner,0.4,551.9161,58577.8854
+locked,DR-learner,0.5,621.1063,61510.9172
+locked,DR-learner,0.6,621.1507,45321.9291
+locked,DR-learner,0.7,764.2659,77440.1343
+locked,DR-learner,0.8,820.0414,81004.4899
+locked,DR-learner,0.9,933.9078,102482.8376
+locked,DR-learner,1.0,1085.2023,141650.2991
+locked,Class Transformation,0.1,237.652,33159.9927
+locked,Class Transformation,0.2,315.3042,26524.8849
+locked,Class Transformation,0.3,395.5536,52117.3243
+locked,Class Transformation,0.4,480.673,56177.6465
+locked,Class Transformation,0.5,557.5822,52379.2033
+locked,Class Transformation,0.6,640.5932,58352.0377
+locked,Class Transformation,0.7,696.4598,62304.2195
+locked,Class Transformation,0.8,831.4185,92208.7282
+locked,Class Transformation,0.9,968.649,120053.8073
+locked,Class Transformation,1.0,1085.2023,141650.2991
+oot,S-learner,0.1,336.818,24467.7396
+oot,S-learner,0.2,579.5651,48948.9778
+oot,S-learner,0.3,750.8529,62231.4802
+oot,S-learner,0.4,829.4495,64381.5639
+oot,S-learner,0.5,929.2006,79469.5727
+oot,S-learner,0.6,1080.4001,99488.4215
+oot,S-learner,0.7,1208.0131,130585.312
+oot,S-learner,0.8,1258.2297,127710.8195
+oot,S-learner,0.9,1402.9032,158954.743
+oot,S-learner,1.0,1463.9987,173597.398
+oot,T-learner,0.1,318.9383,34178.5453
+oot,T-learner,0.2,504.6839,48288.2929
+oot,T-learner,0.3,627.5271,62688.9797
+oot,T-learner,0.4,822.8518,85745.3935
+oot,T-learner,0.5,892.7763,94319.1655
+oot,T-learner,0.6,1031.2235,104699.4474
+oot,T-learner,0.7,1119.3674,115607.8889
+oot,T-learner,0.8,1216.9438,127106.3071
+oot,T-learner,0.9,1349.0087,152536.6329
+oot,T-learner,1.0,1463.9987,173597.398
+oot,X-learner,0.1,384.4668,31027.8755
+oot,X-learner,0.2,582.6478,47233.2669
+oot,X-learner,0.3,689.2577,56640.2473
+oot,X-learner,0.4,799.6139,64890.5478
+oot,X-learner,0.5,926.3971,79613.3578
+oot,X-learner,0.6,1102.9197,104525.8702
+oot,X-learner,0.7,1235.5912,119618.5817
+oot,X-learner,0.8,1341.6991,142354.1198
+oot,X-learner,0.9,1446.9217,165141.7736
+oot,X-learner,1.0,1463.9987,173597.398
+oot,R-learner,0.1,318.4404,20682.9288
+oot,R-learner,0.2,542.8328,43793.5437
+oot,R-learner,0.3,729.0274,66856.4702
+oot,R-learner,0.4,862.1353,76592.9484
+oot,R-learner,0.5,995.1632,96533.1108
+oot,R-learner,0.6,1100.2153,104693.9767
+oot,R-learner,0.7,1169.5647,112609.9494
+oot,R-learner,0.8,1343.4296,144503.9481
+oot,R-learner,0.9,1393.6123,151070.0648
+oot,R-learner,1.0,1463.9987,173597.398
+oot,DR-learner,0.1,304.5862,16003.8791
+oot,DR-learner,0.2,574.0732,55348.9609
+oot,DR-learner,0.3,731.0883,64420.2521
+oot,DR-learner,0.4,859.4934,76637.1306
+oot,DR-learner,0.5,1029.328,108402.8817
+oot,DR-learner,0.6,1130.4857,109908.057
+oot,DR-learner,0.7,1260.5205,135899.8338
+oot,DR-learner,0.8,1304.1945,146266.8274
+oot,DR-learner,0.9,1415.1122,159773.4176
+oot,DR-learner,1.0,1463.9987,173597.398
+oot,Class Transformation,0.1,313.3665,14534.699
+oot,Class Transformation,0.2,542.3458,44204.0744
+oot,Class Transformation,0.3,710.08,71222.7551
+oot,Class Transformation,0.4,902.5501,98583.9346
+oot,Class Transformation,0.5,1021.2554,112701.4595
+oot,Class Transformation,0.6,1047.0358,104816.5738
+oot,Class Transformation,0.7,1169.762,124865.9949
+oot,Class Transformation,0.8,1235.7465,137383.0443
+oot,Class Transformation,0.9,1397.3114,169219.6476
+oot,Class Transformation,1.0,1463.9987,173597.398

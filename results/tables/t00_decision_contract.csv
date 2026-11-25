@@ -1,0 +1,16 @@
+﻿Thành phần,Đặc tả
+Chủ thể quyết định,Bộ phận CRM / Marketing giữ chân khách hàng của chuỗi bán lẻ X5
+Quyết định cần đưa ra,Gửi hay không gửi SMS ưu đãi cho từng khách hàng trong chiến dịch
+Đơn vị phân tích,Khách hàng (client_id) có thẻ thành viên
+Thời điểm quyết định (t0),Ngày kế tiếp sau giao dịch cuối cùng quan sát được
+Kỳ dự báo,H = 14 ngày (dự báo mua hàng); cửa sổ chiến dịch theo dữ liệu X5
+Biến can thiệp T,"treatment_flg ∈ {0, 1}: gửi SMS (ngẫu nhiên hóa trong dữ liệu lịch sử)"
+Biến kết quả Y,"target ∈ {0, 1}: khách có mua hàng trong cửa sổ chiến dịch"
+Đại lượng nhân quả,"CATE τ(x) = E[Y(1) − Y(0) | X = x]; ATE, ATT, ATC"
+Hàm giá trị V,"V_i = τ_i · m · S_i − c_contact − p1_i · c_incentive; m = 0.25, c_contact = 1.0 RUB, c_incentive = 2.0 RUB"
+Tập hành động A,"AUTO_SEND, HUMAN_REVIEW, DEFER, SUPPRESS, NO_ACTION"
+Ràng buộc vận hành,Năng lực gửi K = 30% số khách; ngân sách B = 80%·K·chi phí TB; mỗi nhóm tuổi ≤ 40%·K và ≥ 10% số khách của nhóm; năng lực duyệt 500 ca
+Rào chắn nghiệp vụ,Chặn 'sleeping dog' (τ̂ < -0.01); hoãn khách vừa mua ≤ 2 ngày; VIP & bất định cao → người duyệt
+Chỉ số đánh giá,"AUC, Brier, ECE, độ phủ CQR; Qini, AUUC, uplift@k; regret; lợi nhuận tăng thêm DR, ROI tăng thêm; P50/P95/P99; PSI, Action TVD"
+Tiêu chí chấp nhận,Xem bảng Release Gates (cổng phát hành) trong giai đoạn 8
+Hợp đồng dữ liệu,"uplift_train, clients, purchases (X5 RetailHero) - kiểm chứng SHA-256 khi nạp"

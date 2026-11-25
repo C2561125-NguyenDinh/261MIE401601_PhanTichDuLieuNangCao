@@ -1,0 +1,5 @@
+﻿Tập,Phương pháp,Độ phủ,Độ rộng TB (RUB),MAE điểm (RUB),MAE baseline AOV (RUB),Độ phủ mục tiêu
+Locked Test (S2),Quantile thô,0.8722,2721.2878,705.8221,812.3778,0.9
+Locked Test (S2),CQR,0.8975,3014.3418,705.8221,812.3778,0.9
+Out-of-Time (S3),Quantile thô,0.8615,2674.6697,755.2984,850.1559,0.9
+Out-of-Time (S3),CQR,0.89,2957.8488,755.2984,850.1559,0.9

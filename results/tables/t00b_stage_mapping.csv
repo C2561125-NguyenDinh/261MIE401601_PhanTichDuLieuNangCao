@@ -1,0 +1,9 @@
+﻿Giai đoạn,Nội dung,Mô-đun mã nguồn,Đầu ra chính
+1,Thiết kế bài toán quyết định - hành động,src/s0_design.py,"Decision Contract, sơ đồ kiến trúc, Graphic Abstract"
+2,Thiết kế dữ liệu theo thời gian & nhận dạng nhân quả,"src/s1_data.py, src/s2_features.py","Checksum, hồ sơ dữ liệu, snapshot S1–S3, chia tách 4 tập, DAG, bảng kiểm rò rỉ"
+3,"Dự báo nâng cao, hiệu chỉnh, định lượng bất định",src/s3_forecast.py,"LightGBM, Platt/Isotonic, ECE/Brier, CQR, net benefit"
+4,Phân tích nhân quả & uplift,src/s4_causal.py,"SMD, ATE/ATT/ATC (Neyman, AIPW, DoubleML), phản bác, 6 meta-learner, Qini/AUUC"
+5,Predict-Then-Optimize & SPO+,src/s5_spo.py,"Hàm giá trị, oracle top-k, SPO+ (Adam), regret, sai phân hữu hạn"
+6,Tối ưu phân bổ nguồn lực MILP,src/s6_milp.py,"Cái túi đa chiều (SCIP), Greedy, nới lỏng LP, giá đối ngẫu, độ nhạy, độ ổn định"
+7,Định tuyến hành động & Human-in-the-loop,src/s7_router.py,"Quy tắc ưu tiên, kiểm thử tình huống biên, idempotency, nhật ký, playbook"
+8,"Triển khai, đo lường thực chứng, giám sát",src/s8_mlops.py,"Checksum mô hình, độ trễ P50/P95/P99, PSI, TVD, độ trễ nhãn, Challenger, Release Gates"

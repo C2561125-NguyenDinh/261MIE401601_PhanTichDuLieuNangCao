@@ -1,0 +1,38 @@
+﻿Đặc trưng,Phép kiểm định,Ngưỡng,Giá trị,Trôi dạt (Evidently),PSI Train→OOT,"Cảnh báo PSI (≥ 0,10)"
+issue_to_redeem_days,Wasserstein distance (normed),0.1,0.9017,True,3.6202,True
+sum_28d,Wasserstein distance (normed),0.1,0.1026,True,0.0074,False
+sum_all,Wasserstein distance (normed),0.1,0.1479,True,0.0237,False
+first_tx_age,Wasserstein distance (normed),0.1,0.3062,True,0.0979,False
+age,Wasserstein distance (normed),0.1,0.1218,True,0.0349,False
+aov_max,Wasserstein distance (normed),0.1,0.1144,True,0.0137,False
+items_per_tx,Wasserstein distance (normed),0.1,0.1017,True,0.0105,False
+n_stores,Wasserstein distance (normed),0.1,0.1706,True,0.0371,False
+days_since_redeem,Wasserstein distance (normed),0.1,1.6736,True,7.1018,True
+rp_spent_sum,Wasserstein distance (normed),0.1,0.1437,True,0.0228,False
+has_redeemed,Jensen-Shannon distance,0.1,0.3213,True,0.0,False
+tenure_days,Wasserstein distance (normed),0.1,2.8147,True,8.296,True
+has_tx,Jensen-Shannon distance,0.1,0.0,False,0.0,False
+trend_14_28,Wasserstein distance (normed),0.1,0.054,False,0.005,False
+sum_trend_14_28,Wasserstein distance (normed),0.1,0.0346,False,0.0055,False
+recency,Wasserstein distance (normed),0.1,0.0294,False,0.0139,False
+sum_14d,Wasserstein distance (normed),0.1,0.0927,False,0.0113,False
+age_invalid,Jensen-Shannon distance,0.1,0.0141,False,0.0,False
+gender_F,Jensen-Shannon distance,0.1,0.0721,False,0.0,False
+gender_M,Jensen-Shannon distance,0.1,0.0454,False,0.0,False
+n_tx_28d,Wasserstein distance (normed),0.1,0.0437,False,0.003,False
+mean_gap,Wasserstein distance (normed),0.1,0.044,False,0.0188,False
+n_tx_14d,Wasserstein distance (normed),0.1,0.0668,False,0.0082,False
+sum_7d,Wasserstein distance (normed),0.1,0.0512,False,0.004,False
+n_tx_7d,Wasserstein distance (normed),0.1,0.0591,False,0.0036,False
+neg_tx_share,Jensen-Shannon distance,0.1,0.0059,False,0.0,False
+mean_hour,Wasserstein distance (normed),0.1,0.0375,False,0.0046,False
+share_weekend,Wasserstein distance (normed),0.1,0.0268,False,0.0023,False
+share_spent_tx,Wasserstein distance (normed),0.1,0.0312,False,0.0072,False
+ep_spent_sum,Wasserstein distance (normed),0.1,0.0507,False,0.0053,False
+ep_recv_sum,Wasserstein distance (normed),0.1,0.0179,False,0.0,False
+rp_recv_sum,Wasserstein distance (normed),0.1,0.0362,False,0.0024,False
+qty_per_tx,Wasserstein distance (normed),0.1,0.094,False,0.0095,False
+aov_std,Wasserstein distance (normed),0.1,0.0878,False,0.013,False
+aov_all,Wasserstein distance (normed),0.1,0.0983,False,0.0116,False
+n_tx_all,Wasserstein distance (normed),0.1,0.0748,False,0.0075,False
+gender_U,Jensen-Shannon distance,0.1,0.0335,False,0.0,False

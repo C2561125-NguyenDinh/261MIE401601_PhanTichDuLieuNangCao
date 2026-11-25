@@ -1,0 +1,13 @@
+﻿Tập,Phương án rào chắn,Số bị chặn trong tập MILP chọn,Số khách bị chặn (toàn tập),Lợi nhuận DR (RUB)
+val,Không rào chắn,0,0,47167.7916
+val,"R1 gốc: τ̂ learner đã chọn < −0,01",467,10159,36765.1705
+val,R1 đồng thuận: ≥ 5/6 learner âm,306,3216,38532.6915
+val,R1 đồng thuận: 6/6 learner âm,57,847,45827.472
+locked,Không rào chắn,0,0,20170.3799
+locked,"R1 gốc: τ̂ learner đã chọn < −0,01",447,10373,11317.7032
+locked,R1 đồng thuận: ≥ 5/6 learner âm,308,3148,12662.9862
+locked,R1 đồng thuận: 6/6 learner âm,71,827,18563.2753
+oot,Không rào chắn,0,0,41533.6332
+oot,"R1 gốc: τ̂ learner đã chọn < −0,01",412,11651,36549.6685
+oot,R1 đồng thuận: ≥ 5/6 learner âm,81,1253,46194.5599
+oot,R1 đồng thuận: 6/6 learner âm,11,191,42348.827

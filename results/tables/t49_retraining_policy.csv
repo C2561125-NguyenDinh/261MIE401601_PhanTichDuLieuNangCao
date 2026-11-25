@@ -1,0 +1,7 @@
+﻿Loại kích hoạt,Điều kiện,Hành động
+Định kỳ,Mỗi 28 ngày (bằng kỳ dự báo H),"Huấn luyện Challenger trên cửa sổ mới, so với Current trên OOT"
+Trôi dạt đặc trưng,≥ 3 đặc trưng PSI ≥ 0.25,Tái huấn luyện sớm + chuyển AUTO_SEND sang duyệt
+Suy giảm hiệu chỉnh,ECE > 0.03 khi đã đủ nhãn,Hiệu chỉnh lại trên cửa sổ validation mới
+Suy giảm uplift,Qini OOT ≤ 0 hoặc KTC giá trị chính sách chứa 0,"Dừng nhắm mục tiêu, quay về thí nghiệm ngẫu nhiên có nhóm đối chứng"
+Trôi dạt chính sách,"Action TVD > 0,10 giữa hai kỳ",Rà soát quy tắc nghiệp vụ và phân phối V̂
+Thăng hạng Challenger,"Thắng Current trên ≥ 2/3 chỉ số chính, không vi phạm cổng nào",Triển khai shadow → canary 10% → 100%

@@ -1,0 +1,22 @@
+Giai đoạn,Nghiên cứu,Đóng góp chính,Vai trò trong đề tài
+1. Thiết kế bài toán,"Ascarza (2018); Lemmens & Gupta (2020)",Nhắm theo tác động và theo lợi nhuận thay vì theo rủi ro rời bỏ,Định nghĩa hàm giá trị và đại lượng cần ước lượng
+1. Thiết kế bài toán,Haupt & Lessmann (2022),Chi phí phụ thuộc phản hồi trong nhắm mục tiêu,Thành phần chi phí ưu đãi trong hàm giá trị
+2. Dữ liệu theo thời gian,"Kaufman et al. (2012); Hyndman & Athanasopoulos (2021)",Định nghĩa và phòng chống rò rỉ; kiểm định theo thời gian,Thiết kế snapshot và bảng kiểm rò rỉ
+2. Nhận dạng nhân quả,"Pearl (2009); Imbens & Rubin (2015); Rosenbaum & Rubin (1983)",DAG; kết quả tiềm năng; điểm xu hướng,DAG chiến dịch; kiểm tra cân bằng và overlap
+3. Dự báo,"Ke et al. (2017); Chen & Guestrin (2016)",Thuật toán tăng cường độ dốc hiệu năng cao,Mô hình dự báo và mô hình cơ sở của learner
+3. Hiệu chỉnh,"Platt (1999); Zadrozny & Elkan (2002); Niculescu-Mizil & Caruana (2005); Guo et al. (2017)",Phương pháp hiệu chỉnh và chỉ số ECE,Bộ hiệu chỉnh và đánh giá
+3. Bất định,"Romano et al. (2019); Lei et al. (2018); Angelopoulos & Bates (2023)",Dự báo phù hợp và CQR,Khoảng chi tiêu có bảo đảm độ phủ
+3. Giá trị dự báo,Vickers & Elkin (2006),Đường cong quyết định,Đánh giá net benefit
+4. Tác động trung bình,"Robins et al. (1994); Chernozhukov et al. (2018); Bach et al. (2022)",AIPW; Double ML; cross-fitting,Ước lượng ATE/ATT/ATC
+4. Tác động không đồng nhất,"Künzel et al. (2019); Nie & Wager (2021); Kennedy (2023); Jaskowski & Jaroszewicz (2012)",Các meta-learner,Sáu learner CATE
+4. Tác động không đồng nhất,"Wager & Athey (2018); Athey et al. (2019); Rzepakowski & Jaroszewicz (2012)",Rừng nhân quả và cây uplift,Hướng phát triển
+4. Đánh giá uplift,"Radcliffe (2007); Gutierrez & Gérardy (2017); Devriendt et al. (2018); Rößler & Schoder (2022); Diemert et al. (2018)",Qini; AUUC; đối sánh phương pháp,Chỉ số và quy trình đánh giá
+4. Đánh giá chính sách,"Athey & Wager (2021); Hitsch et al. (2024)",Học và đánh giá chính sách từ dữ liệu ngẫu nhiên,Giá trị chính sách DR
+5. Predict-Then-Optimize,"Elmachtoub & Grigas (2022); Donti et al. (2017); Wilder et al. (2019); Bertsimas & Kallus (2020)",SPO+; học tập đầu-cuối; phân tích đề xuất,PTO và SPO+
+5. Tổng quan,"Mandi et al. (2024); Sadana et al. (2025)",Tổng quan học tập tập trung vào quyết định và tối ưu ngữ cảnh,Định vị phương pháp
+5. Tối ưu ngẫu nhiên,Kingma & Ba (2015),Adam,Huấn luyện SPO+
+6. Tối ưu nguyên,"Kellerer et al. (2004); Wolsey (2020); Achterberg (2009)",Bài toán cái túi; MILP; bộ giải SCIP,Mô hình và bộ giải MILP
+6. Quyết định dưới bất định,Smith & Winkler (2006),Lời nguyền của người tối ưu,Diễn giải giá trị mục tiêu
+7. Con người tham gia,Mosqueira-Rey et al. (2023),Tổng quan Human-in-the-loop,Thiết kế luồng duyệt
+8. MLOps,"Sculley et al. (2015); Breck et al. (2017); Amershi et al. (2019); Huyen (2022); Kreuzberger et al. (2023); Paleyes et al. (2022)",Nợ kỹ thuật; kiểm thử; quy trình và kiến trúc MLOps,Tầng vận hành và cổng phát hành
+8. Trôi dạt,"Gama et al. (2014); Lu et al. (2019); Rabanser et al. (2019)",Phân loại và phát hiện trôi dạt,Giám sát PSI và trôi dạt mô hình
