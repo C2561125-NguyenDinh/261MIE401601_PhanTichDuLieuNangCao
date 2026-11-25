@@ -11,3 +11,4 @@ logs_*.txt
 report/output/toc_test*
 mlruns/
 report/output/_cover_bg.jpg
+*.bat
